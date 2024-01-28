@@ -1,0 +1,17 @@
+{% extends "cards/base.html" %}
+
+{% block content %}
+    {% if card %}
+        <h3>✏️ Editează card</h3>
+    {% else %}
+        <h2>✨ Creaza card nou</h2>
+    {% endif %}
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Save Card">
+    </form>
+    <a href="{% url 'card-list' %}">
+        Renunță
+    </a>
+{% endblock %}
