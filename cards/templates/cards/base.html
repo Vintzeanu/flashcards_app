@@ -17,13 +17,20 @@
         --code: #d81b60;
         --preformatted: #444;
     }
+    
+    .story-container {
+        max-width: 600px;
+        margin: 0 auto; /* Centrarea containerului pe pagină */
+        padding: 0px 60px 0px 60 px; /* Adăugarea unui spațiu de 20px în jurul containerului */
+    }
 
     article {
-        background-color: #87ceff;
+        background-color: #aadcff;
         border: 1px solid var(--border);
-        border-radius: 5px;
+        border-radius: 2px;
         padding: 1em;
         margin: 1em 0;
+        max-width: 600 px;
     }
     h1 {
         text-align: center
@@ -55,8 +62,9 @@
 </style>
 
 <body>
+    <div class="story-container">
     <header>
-        <h1>Ebraica bibilică</h1>
+        <h1>Ebraica biblică</h1>
         {% include "cards/navigation.html" %}
     </header>
     <main>
@@ -64,6 +72,9 @@
             <h2>Flashcards app! pentru ebraica biblică</h2>
         {% endblock content %}
     </main>
+    </div>
 </body>
 
 </html>
+
+

@@ -1,7 +1,24 @@
 {% load humanize %}
-
+<style>
+    nav {
+        text-align: center; /* Centrare orizontală a conținutului în cadrul elementului <nav> */
+    }
+    /* Selecționăm fiecare cutie generată de boxes_as_links */
+    .box {
+        padding: 0px 5px 0px 5px;
+        border: 1px solid var(--border);
+        margin: 0px 2px 0px 2px;
+        background-color: #ebebeb;
+        border-radius: 5px;
+    }
+</style>
+<nav;>
 {% for box in boxes %}
-    <a href="{% url 'box' box_num=box.number %}">
-        🗃 {{ box.number | ordinal }} Box <mark>{{ box.card_count }}</mark>
+    <a href="{% url 'box' box_num=box.number %}" class='box'>
+        🗃 Cutia nr: {{ box.number }}  
     </a>
 {% endfor %}
+</nav>
+
+
+

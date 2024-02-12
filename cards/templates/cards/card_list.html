@@ -5,12 +5,12 @@
     <h2>
         Toate cardurile
     </h2>
-    <a href="{% url 'card-create' %}" role="button">
+    {% comment %} <a href="{% url 'card-create' %}" role="button">
         ✨ Crează card nou
-    </a>
+    </a> {% endcomment %}
     {% for card in card_list %}
         {% ifchanged %}
-            <h3>🗃 {{ card.box | ordinal }} Box</h3>
+            <h2>🗃 {{ card.box | ordinal }} Box</h2>
         {% endifchanged %}
         {% include "cards/card.html" %}
     {% endfor %}

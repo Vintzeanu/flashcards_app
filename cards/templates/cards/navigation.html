@@ -1,6 +1,7 @@
 {% load cards_tags %}
 
+
 <nav>
-    <a href="{% url 'card-list' %}">🗂 Toate cardurile</a>
+    {% comment %} <a href="{% url 'card-list' %}">🗂 Toate cardurile</a> {% endcomment %}
     {% boxes_as_links %}
 </nav>
