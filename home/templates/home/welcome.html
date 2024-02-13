@@ -1,8 +1,14 @@
+{% load static %}
 <html>
-    <header>
-        <title>Ebraica Biblică</title>
-        <body>
-            <h1>Să învățăm limba cananului</h1>
+    <header><title>Ebraica Biblică!</title></header>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    
+    <div class="my-5 text-center container"> 
+
+        <h1>Să învățăm limba Canaanului!</h1>
+            <a href="{% url 'card-list' %}" class="btn btn-primary">Memorează cuvinte din biblie!</a>
         </body>
-    </header>
+    </div>
 </html>
+
+

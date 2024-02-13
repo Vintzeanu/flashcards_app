@@ -1,4 +1,6 @@
 from django.db import models
+from django.contrib.auth.models import User
+
 
 NUM_BOXES = 5
 BOXES = range(1, NUM_BOXES + 1)
@@ -12,6 +14,7 @@ class Card(models.Model):
         default=BOXES[0],
     )
     date_created = models.DateTimeField(auto_now_add=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='cards' )
 
     def __str__(self):
         return self.question

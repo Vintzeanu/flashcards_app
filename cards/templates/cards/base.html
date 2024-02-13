@@ -17,17 +17,25 @@
         --code: #d81b60;
         --preformatted: #444;
     }
+
+    body {
+        background-color: #c9e9ff; /* Schimbă această valoare la culoarea dorită */
+        margin: 0;
+        padding: 0;
+    }
     
     .story-container {
+        background-color: #ffe7ca;
         max-width: 600px;
         margin: 0 auto; /* Centrarea containerului pe pagină */
-        padding: 0px 60px 0px 60 px; /* Adăugarea unui spațiu de 20px în jurul containerului */
+        padding: 1px 10px 1px 10px; /* Adăugarea unui spațiu de 20px în jurul containerului */
+        border-radius: 5px;
     }
 
     article {
-        background-color: #aadcff;
+        background-color: #c9e9ff;
         border: 1px solid var(--border);
-        border-radius: 2px;
+        border-radius: 4px;
         padding: 1em;
         margin: 1em 0;
         max-width: 600 px;
@@ -43,6 +51,11 @@
 
     h2, h4 {
         margin-top: 0;
+    }
+
+    h3 {
+        margin-top: 0;
+        text-align: center;
     }
 
     hr {
@@ -63,7 +76,7 @@
 
 <body>
     <div class="story-container">
-    <header>
+    <header >
         <h1>Ebraica biblică</h1>
         {% include "cards/navigation.html" %}
     </header>

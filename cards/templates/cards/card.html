@@ -2,25 +2,13 @@
     <div class="container">
     <h1>{{ card.question }}</h1>
     {% if not check_card %}
-        <p>{{ card.answer }}</p>
-        <hr/>
-        <a href="{% url 'card-update' card.id %}" role="button">
-            ✏️ Editează Card
-        </a>
+        {% comment %} <p>{{ card.answer }}</p> {% endcomment %}
+
     {% else %}
 
-
-        <!-- Acesta este elementul care va fi activat la hover -->
-
-        <!-- Acesta este elementul care va fi afișat la hover -->
         <p class="hoverable">{{ card.answer }}</p>
     </div>
-        {% comment %} <details>
-            <summary>Arată răspuns</summary>
-            <p>{{ card.answer }}</p>
-        </details> {% endcomment %}
-        <br>
-        <br>
+
         <hr/>
         {% include "cards/card_check_form.html" with solved=True %}
         {% include "cards/card_check_form.html" with solved=False %}

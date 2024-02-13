@@ -3,15 +3,22 @@
 
 {% block content %}
     <h2>
-        Toate cardurile
+        Răspunsurile se află în cutii
     </h2>
+    <h4>Regula jocului. </br> Deschizi prima cutie 🗃 și îți va afișa un cuvânt la întâmplare.
+        Dacă îți amintești ce înseamnă cuvântul ebraic dai click pe "✅ Știu"
+        și el se mută automat în cutia următoare. Dacă dai click pe butonul "❌ Nu știu" 
+        cuvântul se mută înapoi în prima cutie. Dacă pui cursorul 👆🏼 deasupra cuvântului ebraic, 
+        vei vedea traducerea ✨. &#9995 Trebuie să fii cinstit cu tine însuți dacă vrei să înveți.
+        💪 Dacă ai acceptat această provocare înseamnă că ești pe drumul cel bun 🏆.
+    </h4>
     {% comment %} <a href="{% url 'card-create' %}" role="button">
         ✨ Crează card nou
     </a> {% endcomment %}
-    {% for card in card_list %}
+    {% comment %} {% for card in card_list %}
         {% ifchanged %}
-            <h2>🗃 {{ card.box | ordinal }} Box</h2>
+            <h2> Cutia 🗃 nr {{ card.box | ordinal }} </h2>
         {% endifchanged %}
         {% include "cards/card.html" %}
-    {% endfor %}
+    {% endfor %} {% endcomment %}
 {% endblock content %}
