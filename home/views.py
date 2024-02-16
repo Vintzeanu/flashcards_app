@@ -4,4 +4,5 @@ from django.http import HttpResponse
 def home(request):
     return render(request, "home/welcome.html", {})
 
-# Create your views here.
+def alfabet_view(request):
+    return render(request, 'alfabet/alfabet.html', {})

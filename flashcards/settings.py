@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     "django.contrib.humanize",
     # "cards.apps.CardsConfig",
     "home",
-    "cards"
+    "cards",
+    "alfabet",
 ]
 
 MIDDLEWARE = [

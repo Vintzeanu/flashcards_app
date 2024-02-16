@@ -1,4 +1,5 @@
 import random
+from django.shortcuts import render
 
 from django.shortcuts import get_object_or_404, redirect
 from django.urls import reverse_lazy
@@ -48,3 +49,6 @@ class BoxView(CardListView):
             card.move(form.cleaned_data["solved"])
 
         return redirect(request.META.get("HTTP_REFERER"))
+    
+def home(request):
+    return render(request, "home/welcome.html", {})
