@@ -6,3 +6,6 @@ def home(request):
 
 def alfabet_view(request):
     return render(request, 'alfabet/alfabet.html', {})
+
+def vowels_view(request):
+    return render(request, 'vowels/vowels.html', {})

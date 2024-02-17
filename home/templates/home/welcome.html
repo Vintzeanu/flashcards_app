@@ -74,10 +74,11 @@
     }
     .custom-link {
         display: inline-block;
+        width: calc(50% - 10px); /* 50% lățime, minus margin */
         background-color: #3fb2ff;
         margin: 5px;
         color: white;
-        padding: 10px 20px;
+        padding: 10px 0; /* Am eliminat paddingul în stânga și dreapta pentru a face butonul centrat */
         text-align: center;
         text-decoration: none;
         border-radius: 5px;
@@ -93,9 +94,38 @@
     </header>
     <main>
         <div style="text-align: center;">
-            
+            <p>
+                &#x1F52F În limba română se scrie de la stânga la dreapta iar în limba Ebraică 
+                se scrie de la dreapta la stânga. Alfabetul român are consoane și vocale.
+                Alfabetul ebraic are doar consoane.
+            </p>            
             <a href="{% url 'alfabet' %}" class="custom-link">Alfabetul ebraic</a>
         </br>
+            <p>
+                &#x1F54E În timpul fazei inițiale, limba ebraică era scrisă fără a indica în scriere nici o vocală. 
+                Literele <strong>צדק</strong> ar fi putut însemna "dreptate", "dreptatea lui", "ei sunt 
+                drepți" etc.  Această fază a avut loc înainte de regele David, aproximativ între 1400 și 1000 î.Hr.
+                <br>
+                &#x1F54E În timpul fazei de mijloc, mai multe litere ale alfabetului au început să fie folosite 
+                pentru a indica anumite vocale. Literele <strong> צדקו </strong> ar fi putut însemna 
+                "dreptatea lui" sau "ei sunt drepți", dar nu "dreptate". Ne vom referi la aceste litere 
+                folosite pentru a indica vocalele ca fiind litere vocale. Această fază a fost după 
+                regele David, aproximativ între 1.000 î.Hr. și 300 î.Hr.
+                <br>
+                &#x1F54E În timpul fazei finale, au fost adăugate "puncte" în text pentru a elimina orice ambiguitate. 
+                Cuvântul <strong> צִדְקוּ </strong> nu putea să însemne decât "ei sunt drepți." Ne vom referi 
+                la aceste puncte ca fiind semne vocale. Această fază a fost cca. 700 d.Hr. până în anul 1000 d.Hr.
+                <br>
+                &#x1F54E Savanții responsabili de adăugarea semnelor vocale în text sunt numiți “masoreți”. 
+                Textul Bibliei produs de masoreți este numit "Textul Masoretic", prescurtat MT. 
+                Pagina aceasta își propune să vă familiarizeze să citiți textul ebraic din această fază finală.
+                </p>
+            <a href="{% url 'vowels' %}" class="custom-link">Vocalele alfabetului ebraic</a>
+        </br>
+                <p>
+                    &#x1F52F În continuare avem un joc de memorare care conține rădăcinile verbale 
+                    și cuvintele care apar de mai mult de 500 de ori în textul biblic.
+                </p>
             <a href="{% url 'card-list' %}" class="custom-link">Memorează cuvinte din Biblie!</a>
         </div>
     </main>

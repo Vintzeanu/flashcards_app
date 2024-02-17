@@ -22,5 +22,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("cards/", include("cards.urls")),
     path("", include('home.urls')),
-    path("", include('alfabet.urls'))
+    path("", include('alfabet.urls')),
+    path("", include('vowels.urls')),
+
 ]
