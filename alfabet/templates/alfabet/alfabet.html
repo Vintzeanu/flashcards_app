@@ -1,93 +1,13 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <title>Ebraica biblică</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
 </head>
-
-<style>
-
-    :root {
-        --accent: #6e48ad;
-        --accent-bg: white;
-        --bg: #fff;
-        --text: #212121;
-        --text-light: #585858;
-        --border: #d8dae1;
-        --code: #d81b60;
-        --preformatted: #444;
-    }
-
-    body {
-        background-color: #c9e9ff; /* Schimbă această valoare la culoarea dorită */
-        margin: 0;
-        padding: 0;
-    }
-    
-    .story-container {
-        background-color: #ffe7ca;
-        max-width: 600px;
-        margin: 0 auto; /* Centrarea containerului pe pagină */
-        padding: 1px 10px 1px 10px; /* Adăugarea unui spațiu de 20px în jurul containerului */
-        border-radius: 5px;
-    }
-
-    .colored-letter {
-        style: strong;
-        color: red; 
-    }
-
-    article {
-        background-color: #c9e9ff;
-        border: 1px solid var(--border);
-        border-radius: 4px;
-        padding: 1em;
-        margin: 1em 0;
-        max-width: 600 px;
-    }
-    h1 {
-        text-align: center
-
-    }
-    h2 {
-        text-align: center;
-        color: #3fb2ff;
-    }
-
-    h2, h4 {
-        margin-top: 0;
-    }
-
-    h3 {
-        color: #3fb2ff;
-        text-align: center;
-    }
-
-    hr {
-        background: var(--accent);
-        border-color: var(--accent);
-    }
-
-
-    input, select, textarea {
-        width: 100%;
-    }
-        
-    table {
-      {% comment %} font-family: arial, sans-serif; {% endcomment %}
-      border-collapse: collapse;
-      width: 100%;
-    }
-        
-    td, th {
-      border: 1px solid #c9e9ff;
-      text-align: left;
-    }
-        
-    tr:nth-child(even) {
-      background-color: #c9e9ff;
-    }
-</style>
 
 <body>
     <div class="story-container">

@@ -1,91 +1,14 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <title>Ebraica biblică</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
 </head>
 
-<style>
 
-    :root {
-        --accent: #6e48ad;
-        --accent-bg: white;
-        --bg: #fff;
-        --text: #212121;
-        --text-light: #585858;
-        --border: #d8dae1;
-        --code: #d81b60;
-        --preformatted: #444;
-    }
-
-    body {
-        background-color: #c9e9ff; /* Schimbă această valoare la culoarea dorită */
-        margin: 0;
-        padding: 0;
-    }
-    
-    .story-container {
-        background-color: #ffe7ca;
-        max-width: 600px;
-        margin: 0 auto; /* Centrarea containerului pe pagină */
-        padding: 1px 10px 1px 10px; /* Adăugarea unui spațiu de 20px în jurul containerului */
-        border-radius: 5px;
-    }
-
-    article {
-        background-color: #c9e9ff;
-        border: 1px solid var(--border);
-        border-radius: 4px;
-        padding: 1em;
-        margin: 1em 0;
-        max-width: 600 px;
-    }
-    h1 {
-        text-align: center
-
-    }
-    h2 {
-        text-align: center;
-        color: #3fb2ff;
-    }
-
-    h2, h4 {
-        margin-top: 0;
-    }
-
-    h3 {
-        margin-top: 0;
-        text-align: center;
-    }
-
-    hr {
-        background: var(--accent);
-        border-color: var(--accent);
-    }
-
-    button,
-    a[role="button"] {
-        color: #006cb8;
-        text-decoration: none;
-    }
-
-    input, select, textarea {
-        width: 100%;
-    }
-    .custom-link {
-        display: inline-block;
-        width: calc(50% - 10px); /* 50% lățime, minus margin */
-        background-color: #3fb2ff;
-        margin: 5px;
-        color: white;
-        padding: 10px 0; /* Am eliminat paddingul în stânga și dreapta pentru a face butonul centrat */
-        text-align: center;
-        text-decoration: none;
-        border-radius: 5px;
-        border: none;
-        cursor: pointer;
-    }
-</style>
 
 <body>
     <div class="story-container">

@@ -23,36 +23,10 @@ body {
     border-radius: 5px;
 }
 
-.my-5 {
-    margin-top:3rem!important;
-    margin-bottom:3rem!important}
-
-.btn-primary {
-    color:#fff;
-    background-color:#0d6efd;
-    border-color:#0d6efd
+.colored-letter {
+    style: strong;
+    color: red; 
 }
-.btn-primary:hover {
-    color:#fff;
-    background-color:#0b5ed7;
-    border-color:#0a58ca
-}
-.btn-check:focus+.btn-primary,.btn-primary:focus {
-    color:#fff;
-    background-color:#0b5ed7;
-    border-color:#0a58ca;
-    box-shadow:0 0 0 .25rem rgba(49,132,253,.5)
-}
-.btn-check:active+.btn-primary,.btn-check:checked+.btn-primary,.btn-primary.active,.btn-primary:active,.show>.btn-primary.dropdown-toggle {
-    color:#fff;  
-    background-color:#0a58ca;  
-    border-color:#0a53be}
-.btn-check:active+.btn-primary:focus,.btn-check:checked+.btn-primary:focus,.btn-primary.active:focus,.btn-primary:active:focus,.show>.btn-primary.dropdown-toggle:focus {
-    box-shadow:0 0 0 .25rem rgba(49,132,253,.5)
-}
-.btn-primary.disabled,.btn-primary:disabled {
-    color:#fff; background-color:#0d6efd;
-    border-color:#0d6efd}
 
 article {
     background-color: #c9e9ff;
@@ -94,3 +68,17 @@ a[role="button"] {
 input, select, textarea {
     width: 100%;
 }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+      
+  td, th {
+    border: 1px solid #c9e9ff;
+    text-align: left;
+  }
+      
+  tr:nth-child(even) {
+    background-color: #c9e9ff;
+  }
