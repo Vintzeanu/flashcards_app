@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     "cards",
     "alfabet",
     "vowels",
+    "sheva",
 ]
 
 MIDDLEWARE = [

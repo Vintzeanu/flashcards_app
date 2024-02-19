@@ -1,11 +1,11 @@
 :root {
-    --accent: #6e48ad;
+    --accent: #39383b;
     --accent-bg: white;
     --bg: #fff;
     --text: #212121;
     --text-light: #585858;
     --border: #d8dae1;
-    --code: #d81b60;
+    --code: #373637;
     --preformatted: #444;
 }
 
@@ -42,6 +42,11 @@ body {
     cursor: pointer;
 }
 
+.p-indent {
+    margin-left: 30px;
+
+}
+
 article {
     background-color: #c9e9ff;
     border: 1px solid var(--border);
@@ -68,6 +73,8 @@ h3 {
     color: #3fb2ff;
     text-align: center;
 }
+
+
 
 hr {
     background: var(--accent);

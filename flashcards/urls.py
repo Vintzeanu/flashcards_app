@@ -24,7 +24,8 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("cards/", include("cards.urls")),
     path("", include('home.urls')),
-    path("", include('alfabet.urls')),
-    path("", include('vowels.urls')),
+    path("alfabet/", include('alfabet.urls')),
+    path("vowels/", include('vowels.urls')),
+    path("sheva/", include('sheva.urls')),
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
