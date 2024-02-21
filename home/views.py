@@ -12,3 +12,6 @@ def vowels_view(request):
 
 def sheva_view(request):
     return render(request, 'sheva/sheva.html', {})
+
+def substantiv_view(request):
+    return render(request, 'substantiv/substantiv.html', {})

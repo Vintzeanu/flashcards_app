@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     "alfabet",
     "vowels",
     "sheva",
+    "substantiv",
 ]
 
 MIDDLEWARE = [
