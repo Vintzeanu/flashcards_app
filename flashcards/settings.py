@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 import os
-import dj_database_url
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -32,11 +31,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*", "vintze.pythonanywhere.com"]
 
-DATABASES = {
-    'default': dj_database_url.config(
-        default="sqlite:///" + os.path.join(BASE_DIR, "db.sqlite3")
-    )
-}
+
 
 
 # Application definition
