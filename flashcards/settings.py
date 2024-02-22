@@ -30,7 +30,7 @@ SECRET_KEY = (
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["vintze.pythonanywhere.com"]
+ALLOWED_HOSTS = ["*", "vintze.pythonanywhere.com"]
 
 DATABASES = {
     'default': dj_database_url.config(
@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     "vowels",
     "sheva",
     "substantiv",
+    "pronume",
 ]
 
 MIDDLEWARE = [

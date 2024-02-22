@@ -11,6 +11,7 @@ urlpatterns = [
     path('vowels/', views.vowels_view, name='vowels'),
     path('sheva/', views.sheva_view, name='sheva'),
     path("substantiv/", views.substantiv_view, name='substantiv'),
+    path("pronume/", views.pronume_view, name='pronume'),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

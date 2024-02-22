@@ -15,3 +15,6 @@ def sheva_view(request):
 
 def substantiv_view(request):
     return render(request, 'substantiv/substantiv.html', {})
+
+def pronume_view(request):
+    return render(request, 'pronume/pronume.html', {})

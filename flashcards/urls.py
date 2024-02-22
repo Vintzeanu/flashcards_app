@@ -28,4 +28,5 @@ urlpatterns = [
     path("vowels/", include('vowels.urls')),
     path("sheva/", include('sheva.urls')),
     path("substantiv/", include('substantiv.urls')),
+    path("pronume/", include('pronume.urls')),
 ]
