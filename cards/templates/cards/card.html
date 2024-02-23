@@ -1,5 +1,6 @@
 <article>
     <div class="container">
+        <div style="text-align: center;">
     <h1>{{ card.question }}</h1>
     {% if not check_card %}
         {% comment %} <p>{{ card.answer }}</p> {% endcomment %}
@@ -7,6 +8,7 @@
     {% else %}
 
         <p class="hoverable">{{ card.answer }}</p>
+        </div>
     </div>
 
         <hr/>
