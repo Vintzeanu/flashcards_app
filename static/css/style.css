@@ -1,3 +1,4 @@
+
 :root {
     --accent: #39383b;
     --accent-bg: white;
@@ -14,6 +15,16 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.container {
+    display: flex;
+}
+
+.left-sidebar, .right-sidebar {
+    flex: 1; /* Ocupă spațiul disponibil */
+    background-color: lightgray;
+}
+
 
 .story-container {
     background-color: #ffe7ca;
@@ -45,6 +56,13 @@ body {
 .p-indent {
     margin-left: 30px;
 
+}
+
+/* Media query pentru a face designul responsive */
+@media (max-width: 1200px) {
+    .main-content {
+        width: 400px; /* Reducerea dimensiunii conținutului principal pentru dispozitive mai mici */
+    }
 }
 
 article {
