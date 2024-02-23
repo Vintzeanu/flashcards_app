@@ -18,11 +18,12 @@ body {
 
 .container {
     display: flex;
+    justify-content: space-between;
 }
 
 .left-sidebar, .right-sidebar {
     flex: 1; /* Ocupă spațiul disponibil */
-    background-color: lightgray;
+
 }
 
 
@@ -61,7 +62,7 @@ body {
 /* Media query pentru a face designul responsive */
 @media (max-width: 1200px) {
     .main-content {
-        width: 400px; /* Reducerea dimensiunii conținutului principal pentru dispozitive mai mici */
+        width: 600px; /* Reducerea dimensiunii conținutului principal pentru dispozitive mai mici */
     }
 }
 
