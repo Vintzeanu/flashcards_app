@@ -18,3 +18,6 @@ def substantiv_view(request):
 
 def pronume_view(request):
     return render(request, 'pronume/pronume.html', {})
+
+def verb_view(request):
+    return render(request, 'verb/verb.html', {})
