@@ -3,15 +3,17 @@
 <html lang="en">
 
 <head>
-    <title>Ebraica biblică</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebraica biblică</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
 </head>
 
 
 <body>
-    <div class="story-container">
+    <div class="container">
+        <div class="left-sidebar"></div>
+        <div class="story-container">
     <header >
         <h1>Să învățăm limba Canaanului!</h1>
     </header>
@@ -21,9 +23,11 @@
                 &#x1F52F; În limba română se scrie de la stânga la dreapta iar în limba Ebraică 
                 se scrie de la dreapta la stânga. Alfabetul român are consoane și vocale.
                 Alfabetul ebraic are doar consoane.
-            </p>            
-            <a href="{% url 'alfabet' %}" class="custom-link">Alfabetul ebraic</a>
-        </br>
+            </p>
+                <div style="text-align: center;">            
+                    <a href="{% url 'alfabet' %}" class="custom-link">Alfabetul ebraic</a>
+                </div>
+            </br>
             <p>
                 &#x1F54E; În timpul fazei inițiale, limba ebraică era scrisă fără a indica în scriere nici o vocală. 
                 Literele <strong>צדק</strong> ar fi putut însemna "dreptate", "dreptatea lui", "ei sunt 
@@ -45,21 +49,28 @@
                 Textul Bibliei produs de masoreți este numit "Textul Masoretic", prescurtat MT. 
                 Pagina aceasta își propune să vă familiarizeze să citiți textul ebraic din această fază finală.
                 </p>
-            <a href="{% url 'vowels' %}" class="custom-link">Vocalele alfabetului ebraic</a>
-        </br>
-            <a href="{% url 'sheva' %}" class="custom-link">Silabe, șva și dagheș</a>
-        </br>
-            <a href="{% url 'substantiv' %}" class="custom-link">Formele substantivului</a>    
-        </br>
-            <a href="{% url 'pronume' %}" class="custom-link">Pronumele personal și articolul hotărât
-            </a>    
-        </br>
+                <div style="text-align: center;">            
+    
+                    <a href="{% url 'vowels' %}" class="custom-link">Vocalele alfabetului ebraic</a>
+                </br>
+                    <a href="{% url 'sheva' %}" class="custom-link">Silabe, șva și dagheș</a>
+                </br>
+                    <a href="{% url 'substantiv' %}" class="custom-link">Formele substantivului</a>    
+                </br>
+                    <a href="{% url 'pronume' %}" class="custom-link">Pronumele personal și articolul hotărât
+                    </a>    
+                </br>
+                </div>
                 <p>
                     &#x1F52F; În continuare avem un joc de memorare care conține rădăcinile verbale 
                     și cuvintele care apar de mai mult de 500 de ori în textul biblic.
                 </p>
-            <a href="{% url 'card-list' %}" class="custom-link">Memorează cuvinte din Biblie!</a>
+                <div style="text-align: center;">            
+                    <a href="{% url 'card-list' %}" class="custom-link">Memorează cuvinte din Biblie!</a>
+                </div>
+            </main>
         </div>
-    </main>
-    </div>
-</body>
+          <div class="right-sidebar"></div>
+        </div>
+    </body>
+</html>

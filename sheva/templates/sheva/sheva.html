@@ -4,13 +4,14 @@
 <html lang="en">
 
 <head>
-    <title>Ebraica biblică</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebraica biblică</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-
 </head>
 
 <body>
+  <div class="container">
+    <div class="left-sidebar"></div>
     <div class="story-container">
     <header >
         <h1>Silabe, șva și dagheș</h1>
@@ -80,18 +81,15 @@ Dar consoanele <i>begadkefat</i> pot avea dagesh tare sau slab.</p>
 
 <font size='4'> ע , ח , ה , א </font> și uneori <font size='4'>ר</font> sunt consoane guturale. 
 Ele nu primesc niciodată dagheș.
+</p>
 
-
-
-
-<br>
 <br>
 <div style="text-align: center;">
 
     <a href="{% url 'home' %}" class="custom-link">Acasă</a>
     </main>
   </div>
-    </body>
-
-    </div>
+    <div class="right-sidebar"></div>
+  </div>
 </body>
+</html>
