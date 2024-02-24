@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     "substantiv",
     "pronume",
     "verb",
+    "qal_perfect",
 ]
 
 MIDDLEWARE = [

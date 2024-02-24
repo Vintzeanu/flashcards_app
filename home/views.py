@@ -21,3 +21,6 @@ def pronume_view(request):
 
 def verb_view(request):
     return render(request, 'verb/verb.html', {})
+
+def qal_perfect_view(request):
+    return render(request, 'qal_perfect/qal_perfect.html', {})

@@ -30,5 +30,6 @@ urlpatterns = [
     path("substantiv/", include('substantiv.urls')),
     path("pronume/", include('pronume.urls')),
     path("verb/", include('verb.urls')),
+    path("qal_perfect", include('qal_perfect.urls')),
 
 ]

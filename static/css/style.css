@@ -45,7 +45,7 @@ body {
     width: calc(50% - 10px); /* 50% lățime, minus margin */
     background-color: #3fb2ff;
     margin: 5px;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 10px 0; /* Am eliminat paddingul în stânga și dreapta pentru a face butonul centrat */
     text-align: center;
     text-decoration: none;
