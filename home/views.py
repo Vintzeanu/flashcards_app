@@ -24,3 +24,6 @@ def verb_view(request):
 
 def qal_perfect_view(request):
     return render(request, 'qal_perfect/qal_perfect.html', {})
+
+def propozitii_view(request):
+    return render(request, 'propozitii/propozitii.html', {})

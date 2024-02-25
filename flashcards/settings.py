@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     "pronume",
     "verb",
     "qal_perfect",
+    "propozitii",
 ]
 
 MIDDLEWARE = [
