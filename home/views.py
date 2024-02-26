@@ -27,3 +27,6 @@ def qal_perfect_view(request):
 
 def propozitii_view(request):
     return render(request, 'propozitii/propozitii.html', {})
+
+def substantiv_doi_view(request):
+    return render(request, 'substantiv_doi/substantiv_doi.html', {})
