@@ -109,7 +109,7 @@ body {
 /* Media query pentru a face designul responsive */
 @media (max-width: 1200px) {
     .main-content {
-        width: 600px; /* Reducerea dimensiunii conținutului principal pentru dispozitive mai mici */
+        width: 400px; /* Reducerea dimensiunii conținutului principal pentru dispozitive mai mici */
     }
 }
 
