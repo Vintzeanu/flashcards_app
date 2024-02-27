@@ -108,7 +108,11 @@ body {
 /* Media query pentru a face designul responsive */
 @media (max-width: 800px) {
     .main-content {
-        width: 400px; /* Reducerea dimensiunii conținutului principal pentru dispozitive mai mici */
+        width: 500px; /* Reducerea dimensiunii conținutului principal pentru dispozitive mai mici */
+    }
+    .hover-4 {
+        width: 100%; /* Butonul ocupă întreaga lățime pe ecranele mici */
+        font-size: 16px; /* Mărește dimensiunea textului pentru vizibilitate */
     }
 }
 
