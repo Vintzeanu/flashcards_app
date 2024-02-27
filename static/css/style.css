@@ -86,6 +86,7 @@ body {
       linear-gradient(#3fb2ff 0 0);
     background-repeat: no-repeat;
     background-size: 50% .08em;
+    background-color: #ffe7ca;
     background-position:
       -100% 100%,
       200% 0;
@@ -93,6 +94,7 @@ body {
   }
   .hover-4:hover {
     background-size: 50% 100%;
+    background-color: #ffe7ca;
     background-position:
       0 100%,
       100% 0;  
