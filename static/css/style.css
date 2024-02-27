@@ -39,7 +39,7 @@ body {
 
 .story-container {
     background-color: #ffe7ca;
-    max-width: 600px;
+    max-width: 87,5%px;
     margin: 0 auto; /* Centrarea containerului pe pagină */
     padding: 1px 10px 1px 10px; /* Adăugarea unui spațiu de 20px în jurul containerului */
     border-radius: 5px;
@@ -106,7 +106,7 @@ body {
 }
 
 /* Media query pentru a face designul responsive */
-@media (max-width: 1200px) {
+@media (max-width: 800px) {
     .main-content {
         width: 400px; /* Reducerea dimensiunii conținutului principal pentru dispozitive mai mici */
     }
