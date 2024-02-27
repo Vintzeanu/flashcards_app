@@ -30,7 +30,7 @@ body {
 
 .menu-container {
     background-color: none;
-    max-width: 12.5%;
+    max-width: 200px;
     margin: 0 auto; /* Centrarea containerului pe pagină */
     padding: 1px 1px 1px 1px; 
     border-radius: 5px;
@@ -39,7 +39,7 @@ body {
 
 .story-container {
     background-color: #ffe7ca;
-    max-width: 87,5%px;
+    max-width: 500px;
     margin: 0 auto; /* Centrarea containerului pe pagină */
     padding: 1px 10px 1px 10px; /* Adăugarea unui spațiu de 20px în jurul containerului */
     border-radius: 5px;
