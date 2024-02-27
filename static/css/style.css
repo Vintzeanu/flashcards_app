@@ -23,13 +23,23 @@ body {
 
 .left-sidebar, .right-sidebar {
     flex: 1; /* Ocupă spațiul disponibil */
+    border: 2 px;
+    border-color: #3fb2ff;
 
+}
+
+.menu-container {
+    background-color: none;
+    max-width: 12.5%;
+    margin: 0 auto; /* Centrarea containerului pe pagină */
+    padding: 1px 1px 1px 1px; 
+    border-radius: 5px;
 }
 
 
 .story-container {
     background-color: #ffe7ca;
-    max-width: 600px;
+    max-width: 50%;
     margin: 0 auto; /* Centrarea containerului pe pagină */
     padding: 1px 10px 1px 10px; /* Adăugarea unui spațiu de 20px în jurul containerului */
     border-radius: 5px;
@@ -53,6 +63,43 @@ body {
     border: none;
     cursor: pointer;
 }
+
+.menu-link {
+    
+    display: inline-block;
+    width: calc(100% - 10px); /* 50% lățime, minus margin */
+    background-color: none;
+    margin: 1px;
+    color: rgb(0, 0, 0);
+    padding: 1px 0; /* Am eliminat paddingul în stânga și dreapta pentru a face butonul centrat */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 3px ;
+    border-color:  #c9e9ff;
+    cursor: pointer;
+}
+
+
+  .hover-4 {
+    background-image:
+      linear-gradient(#3fb2ff 0 0),
+      linear-gradient(#3fb2ff 0 0);
+    background-repeat: no-repeat;
+    background-size: 50% .08em;
+    background-position:
+      -100% 100%,
+      200% 0;
+    transition: background-size .3s, background-position .3s .3s;
+  }
+  .hover-4:hover {
+    background-size: 50% 100%;
+    background-position:
+      0 100%,
+      100% 0;  
+    transition: background-size .3s .3s, background-position .3s;
+  }  
+
 
 .p-indent {
     margin-left: 30px;
@@ -80,7 +127,7 @@ h1 {
 }
 h2 {
     text-align: center;
-    color: #3fb2ff;
+    color: #343434;
 }
 
 h2, h4 {

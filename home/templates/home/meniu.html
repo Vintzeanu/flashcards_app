@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebraica biblică</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+
+
+<body>
+   
+    <a href="{% url 'home' %}" style="text-decoration: none"><h2>Meniu</h2></a>
+                <p>
+                    <div class="hover-4">
+                    <a href="{% url 'alfabet' %}" class="menu-link">Alfabetul ebraic</a>
+                    </div>
+                </p>       
+                <p>
+                    <div class="hover-4">
+                <a href="{% url 'vowels' %}" class="menu-link">Vocalele alfabetului ebraic</a>
+                    </div>
+                </p>
+                <p>
+                    <div class="hover-4">
+                <a href="{% url 'sheva' %}" class="menu-link">Silabe, șva și dagheș</a>
+                    </div>  
+                </p>
+                <p>
+                    <div class="hover-4">
+                <a href="{% url 'substantiv' %}" class="menu-link">Formele substantivului</a>    
+                    </div>  
+                </p>
+                <p>
+                    <div class="hover-4">
+                <a href="{% url 'pronume' %}" class="menu-link">Pronumele personal și articolul hotărât</a>    
+                    </div>  
+                </p>
+                <p>
+                    <div class="hover-4">
+                <a href="{% url 'verb' %}" class="menu-link">Generalități despre forma verbului</a>    
+                    </div>  
+                </p>
+                <p>
+                    <div class="hover-4">
+                <a href="{% url 'qal_perfect' %}" class="menu-link">Verbul la Qal Perfect</a>
+                    </div>  
+                </p>
+                <p>
+                    <div class="hover-4">
+                <a href="{% url 'propozitii' %}" class="menu-link">Propoziții cu verb</a>   
+                    </div>                       
+                </p>
+                <p>
+                    <div class="hover-4">
+                <a href="{% url 'substantiv_doi' %}" class="menu-link">Substantivul: schimbarea vocalelor</a>
+                    </div>                       
+                </p>        
+    </body>
+</html>
