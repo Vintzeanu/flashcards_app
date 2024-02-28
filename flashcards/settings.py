@@ -55,6 +55,8 @@ INSTALLED_APPS = [
     "qal_perfect",
     "propozitii",
     "substantiv_doi",
+    "prepozitii",
+
 ]
 
 MIDDLEWARE = [
