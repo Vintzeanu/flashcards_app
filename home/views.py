@@ -33,3 +33,6 @@ def substantiv_doi_view(request):
 
 def prepozitii_view(request):
     return render(request, 'prepozitii/prepozitii.html', {})
+
+def adjectiv_view(request):
+    return render(request, 'adjectiv/adjectiv.html', {})

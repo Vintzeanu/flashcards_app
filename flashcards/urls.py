@@ -34,6 +34,6 @@ urlpatterns = [
     path("propozitii", include('propozitii.urls')),
     path("substantiv_doi", include('substantiv_doi.urls')),
     path("prepozitii", include('prepozitii.urls')),
-
+    path("adjectiv", include('adjectiv.urls')),
 
 ]

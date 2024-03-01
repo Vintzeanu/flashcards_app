@@ -17,6 +17,8 @@ urlpatterns = [
     path("propozitii/", views.propozitii_view, name="propozitii"),
     path("substantiv_doi/", views.substantiv_doi_view, name="substantiv_doi"),
     path("prepozitii/", views.prepozitii_view, name="prepozitii"),
+    path("adjectiv/", views.adjectiv_view, name="adjectiv"),
+
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

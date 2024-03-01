@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     "propozitii",
     "substantiv_doi",
     "prepozitii",
+    "adjectiv",
 
 ]
 

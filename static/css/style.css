@@ -63,19 +63,18 @@ body {
     cursor: pointer;
 }
 
-.menu-link {
-    
-    display: inline-block;
-    width: calc(100% - 10px); /* 50% lățime, minus margin */
-    background-color: none;
+.menu-link {    
+    display: block;
+    width: 100%;
+    background-color: #ffe7ca;
     margin: 1px;
+    margin-bottom: 5px; /* Adaugă un spațiu între butoane */
     color: rgb(0, 0, 0);
     padding: 1px 0; /* Am eliminat paddingul în stânga și dreapta pentru a face butonul centrat */
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
-    border: 3px ;
-    border-color:  #c9e9ff;
+    border: none ;
     cursor: pointer;
 }
 
@@ -88,7 +87,7 @@ body {
 .sidebar {
     margin: 0;
     padding: 0;
-    width: 206px;
+    width: 199px;
     position: fixed;
     height: 100%;
     overflow: auto;
@@ -96,9 +95,9 @@ body {
   
   /* Sidebar links */
 .sidebar a {
-    display: block;
+    display: inline-block;
     color: black;
-    padding: 10px;
+    padding: 5px;
     text-decoration: none;
   }
   
@@ -117,8 +116,8 @@ body {
   div.content {
     background-color: #ffe7ca;
     max-width: 600px;
-    margin-left: 205px;
-    padding: 1px 10px 1px 10px;;
+    margin-left: 200px;
+    padding: 1px 1px 1px 1px;;
     border-radius: 5px;
 
   }
@@ -134,16 +133,27 @@ body {
     }
     .sidebar a {float: left;}
     div.content {margin-left: 0;}
-  }
-  
-  /* On screens that are less than 600px, display the bar vertically, instead of horizontally */
-  @media screen and (max-width: 600px) {
-    .sidebar a {
-      text-align: center;
-      float: none;
-    }
+    .menu-link {
+      width: calc(33.33% - 5px); /* Ocupă aproximativ o treime din lățimea ecranului, minus margin */
+      display: inline-block; /* Afișează butoanele pe aceeași linie */
+      margin: 5px; /* Margin între butoane */
   }
 
+  }
+  
+
+  
+  @media screen and (max-width: 600px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+    .menu-link {
+        width: calc(33.33% - 10px);
+        display: inline-block; 
+        margin: 5px;
+    }
+}
 
 
 
