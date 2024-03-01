@@ -80,44 +80,74 @@ body {
 }
 
 
-  .hover-4 {
-    background-image:
-      linear-gradient(#3fb2ff 0 0),
-      linear-gradient(#3fb2ff 0 0);
-    background-repeat: no-repeat;
-    background-size: 50% .08em;
-    background-color: #ffe7ca;
-    background-position:
-      -100% 100%,
-      200% 0;
-    transition: background-size .3s, background-position .3s .3s;
-  }
-  .hover-4:hover {
-    background-size: 50% 100%;
-    background-color: #ffe7ca;
-    background-position:
-      0 100%,
-      100% 0;  
-    transition: background-size .3s .3s, background-position .3s;
-  }  
-
-
 .p-indent {
     margin-left: 30px;
 
 }
 
-/* Media query pentru a face designul responsive */
-@media (max-width: 800px) {
-    .main-content {
-        width: 500px; /* Reducerea dimensiunii conținutului principal pentru dispozitive mai mici */
-    }
-    .hover-4 {
-        width: 100%; /* Butonul ocupă întreaga lățime pe ecranele mici */
-        font-size: 16px; /* Mărește dimensiunea textului pentru vizibilitate */
-    }
-}
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 206px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  /* Sidebar links */
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+  /* Active/current link */
+.sidebar a.active {
+    background-color: #04AA6D;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: #3fb2ff;
+    color: white;
+  }
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    background-color: #ffe7ca;
+    max-width: 600px;
+    margin-left: 205px;
+    padding: 1px 10px 1px 10px;;
+    border-radius: 5px;
 
+  }
+
+
+  
+  /* On screens that are less than 800px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 800px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  /* On screens that are less than 600px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 600px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+
+
+
+  
 article {
     background-color: #c9e9ff;
     border: 1px solid var(--border);
