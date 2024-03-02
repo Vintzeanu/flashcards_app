@@ -6,24 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ebraica biblică</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-
+    <script>
+		function myFunction() {
+		  var x = document.getElementById("nav");
+		  if (x.className === "navbar") {
+			x.className += " responsive";
+		  } else {
+			x.className = "navbar";
+		  }
+		}
+    </script>
 </head>
 
 
 <body>
-        <div class="sidebar">
-                <a href="{% url 'home' %}" class="menu-link"><h2>Lecții</h2></a></br>
-                <a href="{% url 'alfabet' %}" class="menu-link">Alfabetul ebraic</a>
-                <a href="{% url 'vowels' %}" class="menu-link">Vocalele alfabetului ebraic</a>
-                <a href="{% url 'sheva' %}" class="menu-link">Silabe, șva și dagheș</a>
-                <a href="{% url 'substantiv' %}" class="menu-link">Formele substantivului</a>    
-                <a href="{% url 'pronume' %}" class="menu-link">Pronumele personal și articolul hotărât</a>    
-                <a href="{% url 'verb' %}" class="menu-link">Generalități despre forma verbului</a>    
-                <a href="{% url 'qal_perfect' %}" class="menu-link">Verbul la Qal Perfect</a>
-                <a href="{% url 'propozitii' %}" class="menu-link">Propoziții cu verb</a>   
-                <a href="{% url 'substantiv_doi' %}" class="menu-link">Substantivul: schimbarea vocalelor</a>
-                <a href="{% url 'prepozitii' %}" class="menu-link">Prepoziții și waw conjunctiv</a>
-                <a href="{% url 'adjectiv' %}" class="menu-link">Adjectivul</a>
+
+    <div class="navbar" id="nav">
+        <a href=""{% url 'home' %}"" class="active">Lecții</a>
+        <div class="dropdown">
+          <button class="btn">Alfabet 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-menu">
+            <a href="{% url 'alfabet' %}">Alfabetul</a>
+            <a href="{% url 'vowels' %}">Vocalele</a>
+            <a href="{% url 'sheva' %}">Silabe, șva și dagheș</a>
         </div>
+        </div>
+        <div class="dropdown">
+            <button class="btn">Substantivul 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-menu">
+              <a href="{% url 'substantiv' %}">Formele substantivului</a>
+              <a href="{% url 'substantiv_doi' %}">Substantivul: schimbarea vocalelor</a>
+            </div>
+          </div>  
+          <div class="dropdown">
+            <button class="btn">Verbul 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-menu">
+              <a href="{% url 'verb' %}">Generalități despre forma verbului</a>
+              <a href="{% url 'qal_perfect' %}">Verbul la Qal Perfect</a>
+              <a href="{% url 'propozitii' %}">Propoziții cu verb</a>
+            </div>
+          </div>  
+          <div class="dropdown">
+            <button class="btn">Alte părți de propoziție 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-menu">
+              <a href="{% url 'pronume' %}">Pronumele personal și articolul hotărât</a>
+              <a href="{% url 'prepozitii' %}">Prepoziții și waw conjunctiv</a>
+              <a href="{% url 'adjectiv' %}">Adjectivul</a>
+            </div>
+          </div>  
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
     </body>
 </html>

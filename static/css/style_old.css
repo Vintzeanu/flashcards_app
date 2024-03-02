@@ -1,0 +1,198 @@
+
+:root {
+    --accent: #39383b;
+    --accent-bg: white;
+    --bg: #fff;
+    --text: #212121;
+    --text-light: #585858;
+    --border: #d8dae1;
+    --code: #373637;
+    --preformatted: #444;
+}
+
+body {
+    background-color: #c9e9ff; /* Schimbă această valoare la culoarea dorită */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.menu-container {
+    background-color: none;
+    max-width: 200px;
+    margin: 0 auto; /* Centrarea containerului pe pagină */
+    padding: 1px 1px 1px 1px; 
+    border-radius: 5px;
+}
+
+
+.story-container {
+    background-color: white;
+    max-width: 500px;
+    margin: 0 auto; /* Centrarea containerului pe pagină */
+    padding: 1px 10px 1px 10px; /* Adăugarea unui spațiu de 20px în jurul containerului */
+    border-radius: 5px;
+}
+
+
+
+
+
+.menu-link {    
+    display: block;
+    width: 100%;
+    background-color: #ffe7ca;
+    margin: 1px;
+    margin-bottom: 5px; /* Adaugă un spațiu între butoane */
+    color: rgb(0, 0, 0);
+    padding: 1px 0; /* Am eliminat paddingul în stânga și dreapta pentru a face butonul centrat */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none ;
+    cursor: pointer;
+}
+
+
+.p-indent {
+    margin-left: 30px;
+
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 199px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  /* Sidebar links */
+.sidebar a {
+    display: inline-block;
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+  }
+  
+  /* Active/current link */
+.sidebar a.active {
+    background-color: #04AA6D;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: #3fb2ff;
+    color: white;
+  }
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    background-color: #ffe7ca;
+    max-width: 600px;
+    margin-left: 200px;
+    padding: 1px 1px 1px 1px;;
+    border-radius: 5px;
+
+  }
+
+
+  
+  /* On screens that are less than 800px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 800px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+    .menu-link {
+      width: calc(33.33% - 5px); /* Ocupă aproximativ o treime din lățimea ecranului, minus margin */
+      display: inline-block; /* Afișează butoanele pe aceeași linie */
+      margin: 5px; /* Margin între butoane */
+  }
+
+  }
+  
+
+  
+  @media screen and (max-width: 600px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+    .menu-link {
+        width: calc(33.33% - 10px);
+        display: inline-block; 
+        margin: 5px;
+    }
+}
+
+
+
+  
+article {
+    background-color: #c9e9ff;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1em;
+    margin: 1em 0;
+    max-width: 600 px;
+}
+h1 {
+    text-align: center
+
+}
+h2 {
+    text-align: center;
+    color: #343434;
+}
+
+h2, h4 {
+    margin-top: 0;
+}
+
+h3 {
+    margin-top: 12px;
+    color: #3fb2ff;
+    text-align: center;
+}
+
+
+
+hr {
+    background: var(--accent);
+    border-color: var(--accent);
+}
+
+button,
+a[role="button"] {
+    color: #006cb8;
+    text-decoration: none;
+}
+
+input, select, textarea {
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+      
+  td, th {
+    border: 1px solid #c9e9ff;
+    text-align: left;
+  }
+      
+  tr:nth-child(even) {
+    background-color: #c9e9ff;
+  }

@@ -1,217 +1,205 @@
-
-:root {
-    --accent: #39383b;
-    --accent-bg: white;
-    --bg: #fff;
-    --text: #212121;
-    --text-light: #585858;
-    --border: #d8dae1;
-    --code: #373637;
-    --preformatted: #444;
+.navbar {
+  overflow: hidden;
+  background-color: #3fb2ff;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.active {
+  background-color: #0095ff;
+  color: white;
+}
+.navbar .icon {
+  display: none;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .btn {
+  font-size: 20px;    
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-menu a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.navbar a:hover, .dropdown:hover .btn {
+  background-color: #555555;
+  color: white;
 }
 
+.dropdown-menu a:hover {
+  background-color: #cccccc;
+  color: black;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+/* nav bar in cap de pagina  */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/* de aici este codul meu */
+
 body {
-    background-color: #c9e9ff; /* Schimbă această valoare la culoarea dorită */
-    margin: 0;
-    padding: 0;
+  background-color: #c9e9ff; /* Schimbă această valoare la culoarea dorită */
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .left-sidebar, .right-sidebar {
-    flex: 1; /* Ocupă spațiul disponibil */
-    border: 2 px;
-    border-color: #3fb2ff;
+  flex: 1; /* Ocupă spațiul disponibil */
+  border: 2 px;
+  border-color: #3fb2ff;
 
 }
-
-.menu-container {
-    background-color: none;
-    max-width: 200px;
-    margin: 0 auto; /* Centrarea containerului pe pagină */
-    padding: 1px 1px 1px 1px; 
-    border-radius: 5px;
-}
-
 
 .story-container {
-    background-color: #ffe7ca;
-    max-width: 500px;
-    margin: 0 auto; /* Centrarea containerului pe pagină */
-    padding: 1px 10px 1px 10px; /* Adăugarea unui spațiu de 20px în jurul containerului */
-    border-radius: 5px;
-}
-
-.colored-letter {
-    color: red; 
+  background-color: white;
+  max-width: 800px;
+  margin: 0 auto; /* Centrarea containerului pe pagină */
+  padding: 1px 10px 1px 10px; /* Adăugarea unui spațiu de 20px în jurul containerului */
+  border-radius: 5px;
 }
 
 .custom-link {
-    display: inline-block;
-    width: calc(50% - 10px); /* 50% lățime, minus margin */
-    background-color: #3fb2ff;
-    margin: 5px;
-    color: rgb(0, 0, 0);
-    padding: 10px 0; /* Am eliminat paddingul în stânga și dreapta pentru a face butonul centrat */
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-}
-
-.menu-link {    
-    display: block;
-    width: 100%;
-    background-color: #ffe7ca;
-    margin: 1px;
-    margin-bottom: 5px; /* Adaugă un spațiu între butoane */
-    color: rgb(0, 0, 0);
-    padding: 1px 0; /* Am eliminat paddingul în stânga și dreapta pentru a face butonul centrat */
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-    border: none ;
-    cursor: pointer;
+  display: inline-block;
+  width: calc(50% - 10px); /* 50% lățime, minus margin */
+  background-color: #3fb2ff;
+  margin: 5px;
+  color: rgb(0, 0, 0);
+  padding: 10px 0; /* Am eliminat paddingul în stânga și dreapta pentru a face butonul centrat */
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
 }
 
 
 .p-indent {
-    margin-left: 30px;
+  margin-left: 30px;
 
 }
 
-.sidebar {
-    margin: 0;
-    padding: 0;
-    width: 199px;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-  }
-  
-  /* Sidebar links */
-.sidebar a {
-    display: inline-block;
-    color: black;
-    padding: 5px;
-    text-decoration: none;
-  }
-  
-  /* Active/current link */
-.sidebar a.active {
-    background-color: #04AA6D;
-  }
-  
-  /* Links on mouse-over */
-  .sidebar a:hover:not(.active) {
-    background-color: #3fb2ff;
-    color: white;
-  }
-  
-  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
-  div.content {
-    background-color: #ffe7ca;
-    max-width: 600px;
-    margin-left: 200px;
-    padding: 1px 1px 1px 1px;;
-    border-radius: 5px;
-
-  }
-
-
-  
-  /* On screens that are less than 800px wide, make the sidebar into a topbar */
-  @media screen and (max-width: 800px) {
-    .sidebar {
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
-    .sidebar a {float: left;}
-    div.content {margin-left: 0;}
-    .menu-link {
-      width: calc(33.33% - 5px); /* Ocupă aproximativ o treime din lățimea ecranului, minus margin */
-      display: inline-block; /* Afișează butoanele pe aceeași linie */
-      margin: 5px; /* Margin între butoane */
-  }
-
-  }
-  
-
-  
-  @media screen and (max-width: 600px) {
-    .sidebar a {
-        text-align: center;
-        float: none;
-    }
-    .menu-link {
-        width: calc(33.33% - 10px);
-        display: inline-block; 
-        margin: 5px;
-    }
+.colored-letter {
+  color: red; 
 }
 
-
-
-  
-article {
-    background-color: #c9e9ff;
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    padding: 1em;
-    margin: 1em 0;
-    max-width: 600 px;
-}
 h1 {
-    text-align: center
+  text-align: center
 
 }
 h2 {
-    text-align: center;
-    color: #343434;
+  text-align: center;
+  color: #343434;
 }
 
 h2, h4 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 h3 {
-    margin-top: 12px;
-    color: #3fb2ff;
-    text-align: center;
+  margin-top: 12px;
+  color: #0099ff;
+  text-align: center;
 }
 
 
 
 hr {
-    background: var(--accent);
-    border-color: var(--accent);
+  background: var(--accent);
+  border-color: var(--accent);
 }
 
 button,
 a[role="button"] {
-    color: #006cb8;
-    text-decoration: none;
+  color: #0099ff;
+  text-decoration: none;
 }
 
 input, select, textarea {
-    width: 100%;
+  width: 100%;
 }
 
 table {
-    border-collapse: collapse;
-    width: 100%;
+  border-collapse: collapse;
+  width: 100%;
+}
+    
+td, th {
+  border: 1px solid #c9e9ff;
+  text-align: left;
+}
+    
+tr:nth-child(even) {
+  background-color: #c9e9ff;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child), .dropdown .btn {
+  display: none;
   }
-      
-  td, th {
-    border: 1px solid #c9e9ff;
-    text-align: left;
+  .navbar a.icon {
+  float: right;
+  display: block;
   }
-      
-  tr:nth-child(even) {
-    background-color: #c9e9ff;
+}
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
   }
+  .navbar.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+  }
+  .navbar.responsive .dropdown {float: none;}
+  .navbar.responsive .dropdown-menu {position: relative;}
+  .navbar.responsive .dropdown .btn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  }
+}
