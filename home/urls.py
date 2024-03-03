@@ -18,6 +18,8 @@ urlpatterns = [
     path("substantiv_doi/", views.substantiv_doi_view, name="substantiv_doi"),
     path("prepozitii/", views.prepozitii_view, name="prepozitii"),
     path("adjectiv/", views.adjectiv_view, name="adjectiv"),
+    path("qal_imperfect/", views.qal_imperfect_view, name="qal_imperfect"),
+
 
 ]
 

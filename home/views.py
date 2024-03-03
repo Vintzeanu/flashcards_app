@@ -36,3 +36,6 @@ def prepozitii_view(request):
 
 def adjectiv_view(request):
     return render(request, 'adjectiv/adjectiv.html', {})
+
+def qal_imperfect_view(request):
+    return render(request, 'qal_imperfect/qal_imperfect.html', {})

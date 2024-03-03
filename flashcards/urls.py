@@ -35,5 +35,6 @@ urlpatterns = [
     path("substantiv_doi", include('substantiv_doi.urls')),
     path("prepozitii", include('prepozitii.urls')),
     path("adjectiv", include('adjectiv.urls')),
+    path("qal_imperfect", include('qal_imperfect.urls')),
 
 ]

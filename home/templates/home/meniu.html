@@ -40,6 +40,7 @@
               <a href="{% url 'verb' %}">Generalități despre forma verbului</a>
               <a href="{% url 'qal_perfect' %}">Verbul la Qal Perfect</a>
               <a href="{% url 'propozitii' %}">Propoziții cu verb</a>
+              <a href="{% url 'qal_imperfect' %}">Verbul la Qal Imperfect</a>
             </div>
           </div>  
           <div class="dropdown">
@@ -54,6 +55,15 @@
           </div>  
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
       </div>
-      <script src="static/js/navbar.js"></script>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("nav");
+          if (x.className === "navbar") {
+              x.className += " responsive";
+          } else {
+              x.className = "navbar";
+          }
+      }
+      </script>
     </body>
 </html>

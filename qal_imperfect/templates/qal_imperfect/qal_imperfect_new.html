@@ -1,0 +1,125 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebraica biblică</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+    <div class="story-container">
+      <header >
+          <h1>Verbul la Qal Imperfect</h1>
+      </header>
+      <main>
+        <h3> Formele lui qal imperfect </h3>
+        <p> Forma de bază a imperfectului qal este <font size="4"> קְטֹל </font>. Formele particulare se obțin prin 
+            adăugarea de prefixe și sufixe la această bază. Prefixele sunt legate de pronumele personale, cu 
+            excepția formelor de la persoana a 3-a.</p>
+            <table>
+                <tr>
+                  <th> verb </th>
+                  <th>pronume</th>
+                  <td></td>
+                </tr>
+                <tr>
+                    <td> יִקְטֹל </td>
+                    <td></td>
+                    <td><i>3ms</i></td>
+                </tr>
+                <tr>
+                    <td> תִּקְטֹל </td>
+                    <td></td>
+                    <td><i>3fs</i></td>
+                </tr>
+                <tr>
+                    <td> תִּקְטֹל </td>
+                    <td> אַתָּה </td>
+                    <td><i>2ms</i></td>
+                </tr>
+                <tr>
+                    <td> תִּקְטְלִי </td>
+                    <td> אַתְּ </td>
+                    <td><i>2fs</i></td>
+                </tr>
+                <tr>
+                    <td> אֶקְטֹל </td>
+                    <td> אֲנִ / אָנֹכִי </td>
+                    <td><i>1cs</i></td>
+                </tr>
+                <tr>
+                    <td> יִקְטְלוּ </td>
+                    <td>  </td>
+                    <td><i>3mp</i></td>
+                </tr>
+                <tr>
+                    <td> תִּקְטֹלְנָה </td>
+                    <td>  </td>
+                    <td><i>3fp</i></td>
+                </tr>
+                <tr>
+                    <td> יִקְטְלוּ </td>
+                    <td> אַתֶּם </td>
+                    <td><i>2mp</i></td>
+                </tr>
+                <tr>
+                    <td> תִּקְטֹלְנָה </td>
+                    <td> אַתֶּן </td>
+                    <td><i>2fp</i></td>
+                </tr>
+                <tr>
+                    <td> נִקְטֹל </td>
+                    <td> אֲנַחְנוּ </td>
+                    <td><i>1cp</i></td>
+                </tr>
+            </table>
+        </p>
+        <p> În formele 2fs, 3mp și 2mp, vocala tematică, holem (<font size="4">&#1465;&#9744;</font>) în acest caz, 
+            se reduce la sheva (<font size="4">&#1456;&#9744;</font>) 
+            înaintea sufixului vocalic. </br>
+        </p>
+        <p>
+            Accentul se pune pe penultima silabă în formele 3fp și 2fp <font size="4">תִּקְטֹלְנָה</font>. 
+            Memorați aceste forme cu accent. 
+        </p>
+        <p>
+            Vocala tematică a verbelor de acțiune este de obicei holem (<font size="4">&#1465;&#9744;</font>), 
+            de exemplu,<font size="4"> יִשְׁמֹר </font>(<i>el va păzi</i>). Vocala tematică a verbelor stative este, 
+            de obicei, patach (<font size="4">&#1463;&#9744;</font>), de exemplu, <font size="4"> יִכְבַּד </font> ("va fi greu"). 
+            Această distincție nu este menținută în mod consecvent. De exemplu, verbele de acțiune cu o guturală 
+            ca a treia literă a rădăcinii vor avea adesea patach (<font size="4">&#1463;&#9744;</font>) ca vocală tematică, de exemplu,
+            <font size="4"> יִשְׁלַח </font>(<i>el va trimite</i>).
+        </p>
+        <h3>Utilizarea Qal Imperfect</h3>
+        <p>
+            Conjugarea imperfectului este folosită într-o varietate de moduri. Doar două vor fi introduse 
+            în acest moment: "viitorul imperfect" și "prezentul progresiv imperfect". </br>
+            &#x1F449; Viitorul imperfect se folosește pentru a exprima o situație viitoare, cel mai bine tradus 
+            cel mai aproape în română este timpul viitor.</br>
+            <font size="4">יִדְרֹשׁ</font> &#10232; (el) va căuta</br>
+            <font size="4">יִכְתֹּב</font> &#10232; (el) va scrie</br>
+            <font size="4">יִמְלֹךְ</font> &#10232; (el) va domni</br>
+            &#x1F449; Prezentul progresiv imperfect este pentru a exprima o situație în curs de desfășurare în prezent,
+            un fel de prezent continuu.</br>
+            <font size="4">יִדְרֹשׁ</font> &#10232; (el) caută</br>
+            <font size="4">יִכְתֹּב</font> &#10232; (el) scrie</br>
+            <font size="4">יִמְלֹךְ</font> &#10232; (el) domnește</br>
+        </p>
+        <p>
+            &#x2757; Pentru că au aceeași formă, dar perfectul la stativ exprimă prezentul iar imperfectul la stativ exprimă 
+            de obicei viitorul, nu prezentul, se va deduce din context dacă folosirea unui imperfect este viitor 
+            sau prezent continuu. 
+        </p>
+
+        <div style="text-align: center;">
+            <a href="{% url 'home' %}" class="custom-link">Acasă</a>
+        </div>
+            <div class="right-sidebar"></div>
+        </div>
+        </main>
+    </body>
+</html>
