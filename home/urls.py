@@ -19,6 +19,8 @@ urlpatterns = [
     path("prepozitii/", views.prepozitii_view, name="prepozitii"),
     path("adjectiv/", views.adjectiv_view, name="adjectiv"),
     path("qal_imperfect/", views.qal_imperfect_view, name="qal_imperfect"),
+    path("construct_sg/", views.construct_sg_view, name="construct_sg"),
+
 
 
 ]

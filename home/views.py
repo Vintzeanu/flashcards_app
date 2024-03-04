@@ -39,3 +39,6 @@ def adjectiv_view(request):
 
 def qal_imperfect_view(request):
     return render(request, 'qal_imperfect/qal_imperfect.html', {})
+
+def construct_sg_view(request):
+    return render(request, 'construct_sg/construct_sg.html', {})

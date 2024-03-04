@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     "prepozitii",
     "adjectiv",
     "qal_imperfect",
+    "construct_sg",
 
 ]
 
