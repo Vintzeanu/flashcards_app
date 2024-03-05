@@ -21,8 +21,7 @@ urlpatterns = [
     path("qal_imperfect/", views.qal_imperfect_view, name="qal_imperfect"),
     path("construct_sg/", views.construct_sg_view, name="construct_sg"),
     path("construct_pl/", views.construct_pl_view, name="construct_pl"),
-
-
+    path("qal_radacini_slabe/", views.qal_radacini_slabe_view, name="qal_radacini_slabe"),
 
 ]
 

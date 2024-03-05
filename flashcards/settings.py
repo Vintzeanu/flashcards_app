@@ -60,6 +60,7 @@ INSTALLED_APPS = [
     "qal_imperfect",
     "construct_sg",
     "construct_pl",
+    "qal_radacini_slabe",
 ]
 
 MIDDLEWARE = [

@@ -45,3 +45,6 @@ def construct_sg_view(request):
 
 def construct_pl_view(request):
     return render(request, 'construct_pl/construct_pl.html', {})
+
+def qal_radacini_slabe_view(request):
+    return render(request, 'qal_radacini_slabe/qal_radacini_slabe.html', {})

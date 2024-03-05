@@ -38,6 +38,8 @@ urlpatterns = [
     path("qal_imperfect", include('qal_imperfect.urls')),
     path("construct_sg", include('construct_sg.urls')),
     path("construct_pl", include('construct_pl.urls')),
+    path("qal_radacini_slabe", include('qal_radacini_slabe.urls')),
+
 
 
 ]
