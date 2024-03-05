@@ -59,7 +59,7 @@ INSTALLED_APPS = [
     "adjectiv",
     "qal_imperfect",
     "construct_sg",
-
+    "construct_pl",
 ]
 
 MIDDLEWARE = [

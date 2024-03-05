@@ -20,6 +20,7 @@ urlpatterns = [
     path("adjectiv/", views.adjectiv_view, name="adjectiv"),
     path("qal_imperfect/", views.qal_imperfect_view, name="qal_imperfect"),
     path("construct_sg/", views.construct_sg_view, name="construct_sg"),
+    path("construct_pl/", views.construct_pl_view, name="construct_pl"),
 
 
 

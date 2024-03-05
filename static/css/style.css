@@ -66,24 +66,6 @@
 }
 /* nav bar in cap de pagina  */
 
-#NavBar a {
-  color: white;
-  text-align: center;
-  padding: 15px;
-  float: left;
-  display: block;
-}
-
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 60px;
-}
 
 /* de aici este codul meu */
 

@@ -42,3 +42,6 @@ def qal_imperfect_view(request):
 
 def construct_sg_view(request):
     return render(request, 'construct_sg/construct_sg.html', {})
+
+def construct_pl_view(request):
+    return render(request, 'construct_pl/construct_pl.html', {})
