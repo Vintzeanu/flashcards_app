@@ -61,6 +61,7 @@ INSTALLED_APPS = [
     "construct_sg",
     "construct_pl",
     "qal_radacini_slabe",
+    "sufix_posesiv_subst",
 ]
 
 MIDDLEWARE = [

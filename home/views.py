@@ -48,3 +48,6 @@ def construct_pl_view(request):
 
 def qal_radacini_slabe_view(request):
     return render(request, 'qal_radacini_slabe/qal_radacini_slabe.html', {})
+
+def sufix_posesiv_subst_view(request):
+    return render(request, 'sufix_posesiv_subst/sufix_posesiv_subst.html', {})
