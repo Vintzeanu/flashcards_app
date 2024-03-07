@@ -1,0 +1,120 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebraica biblică</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <div class="story-container">
+      <header >
+          <h1>Pronumele demonstrativ și pronumele relativ</h1>
+      </header>
+      <main>
+        <h3> Formele pronumelui demonstrativ </h3>
+        <p>
+            Pronumele demonstrative indică persoana sau obiectul specific la care se face referire,
+             ca în română, <i>cartea aceasta</i> și <i>copii aceia</i> 
+        </p>
+        <p>
+            Aceasta/acesta și acestea/aceștia</br>
+            
+            acești/aceste&nbsp;&nbsp;&nbsp;&nbsp;<i>cp</i>&nbsp;&nbsp;&nbsp;&nbsp;<font size="4">אֵלֶּה</font></br>
+            acest&nbsp;&nbsp;&nbsp;&nbsp;<i>ms</i>&nbsp;&nbsp;&nbsp;&nbsp;<font size="4">זֶה</font></br>
+            această&nbsp;&nbsp;&nbsp;&nbsp;<i>fs</i>&nbsp;&nbsp;&nbsp;&nbsp;<font size="4">זֹאת</font></br>
+        </p>
+        <p>
+            Aceea/acela și acelea/aceia</br>            
+            acei&nbsp;&nbsp;&nbsp;&nbsp;<i>mp</i>&nbsp;&nbsp;&nbsp;&nbsp;<font size="4">הֵם</font></br>
+            acele&nbsp;&nbsp;&nbsp;&nbsp;<i>fp</i>&nbsp;&nbsp;&nbsp;&nbsp;<font size="4">הֵנָּה</font></br>
+            acela&nbsp;&nbsp;&nbsp;&nbsp;<i>ms</i>&nbsp;&nbsp;&nbsp;&nbsp;<font size="4">הוּא</font></br>
+            aceea&nbsp;&nbsp;&nbsp;&nbsp;<i>fs</i>&nbsp;&nbsp;&nbsp;&nbsp;<font size="4">הִיה</font></br>
+        </p>
+        <p>
+            În ebraică, <i>acei, acele, acela </i>și <i>aceea</i> au aceași formă ca  
+            <a href="{% url 'pronume' %}" class="mark">pronumele personale</a>.
+        </p>
+        <h3>Utilizarea pronumelor demonstrative</h3>
+        <p>
+            Pronumele demonstrative sunt folosite ca adjective: atributive și predicative.</br>
+            &#x1F449; Un pronume demonstrativ atributiv trebuie să fie în acord cu genul, numărul și formă
+             și să urmeze substantivul pe care îl descrie. Deoarece se face referire la o persoană 
+             sau la un obiect specific/definit, demonstrativul atributiv are de obicei articolul hotărât.</br>
+             <font size="4">הַסּוּס הַזֶּה</font> acest cal</br>
+             <font size="4">הַסּוּסָה הַזּאֹת</font> această iapă</br>
+             <font size="4">הַסּוּסִים הַאֵלֶּה</font> acești cai</br>
+             <font size="4">הַסּוּסוֹת הַאֵלֶּה</font> aceste iepe</br>
+        </br>
+             <font size="4">הַסּוּס הָהוּא</font> acel cal</br>
+             <font size="4">הַסּוּסָה הָהִיא</font> acea iapă</br>
+             <font size="4">הַסּוּסִים הָהֵם</font> acei cai</br>
+             <font size="4">הַסּוּסוֹת הַהֵנָּה</font> acele iepe</br>
+             &#x1F449; Atunci când un substantiv este descris de un adjectiv și de un pronume demonstrativ, 
+             pronumele demonstrativ urmează adjectivului.</br>
+             <font size="4">הַסּוּס הַטּוֹב הַזֶּה</font> acest cal bun</br>
+             <font size="4">הַסּוּסָה הַטּוֹבָה הַזֹּאת</font> această iapă bună</br>
+             <font size="4">הַסּוּסִים הַטּוֹבִים הַאֵלֶּה</font> aceaști cai buni</br>
+             &#x1F449; Un pronume demonstrativ predicat trebuie să fie în acord cu genul și numărul, 
+             dar nu va avea articolul definit și va avea tendința de a veni înaintea substantivului 
+             pe care îl descrie.</br>
+             <font size="4">זֶה הַסּוּס</font> acesta este calul</br>
+             <font size="4">זֹאת הַסּוּסָה</font> aceasta este iapa</br>
+             <font size="4">אֵלֶּה הַסּוּסִים</font> aceștia sunt caii</br>
+             <font size="4">אֵלֶּה הַסּוּסוֹת</font> acestea sunt iepele</br>
+        </br>
+             <font size="4">הוּא הַסּוּס</font> acela este calul</br>
+             <font size="4">הִיא הַסּוּסָה</font> aceea este iapa</br>
+             <font size="4">הֵם הַסּוּסִים</font> aceia sunt caii</br>
+             <font size="4">הֵנָּה הַסּוּסוֹת</font> acelea sunt iepele</br>
+        </p>
+        <h3>Pronumele relativ (אֲשֶׁר)</h3>
+        <p>
+            Un pronume relativ leagă între ele diferite părți ale unei propoziții, cum ar fi în română,
+             <i>băiatul <b>care</b> a trimis cadoul</i> sau <i>cadoul <b>care</b> a fost trimis</i>.
+        </p>
+        <p>
+            Ebraica are un singur pronume relativ primar <font size="4">אֲשֶׁר</font>, tradus <i>care, 
+            pe cine, pe care, ce, unde,</i> etc.
+        </p>
+        <p>
+            Pronumele relativ <font size="4">אֲשֶׁר</font> rămâne neschimbat, indiferent de genul, 
+            numărul sau definiția cuvântului pe care îl urmează.</br>
+            <font size="4">הָאִישׁ אֲשֶׁר יָשַׁב בַּבַּיִת</font> bărbatul <i>(ms hotărât)</i> care locuia în casă</br>
+            <font size="4">הָאִישָּׁה אֲשֶׁר יָשְׁבָה בַּבַּיִת</font> femeia <i>(fs hotărât)</i> care locuia în casă</br>
+            <font size="4">הָאֲנָשִׁים אֲשֶׁר יָשְׁבוּ בַּבַּיִת</font> bărbații <i>(mp hotărât)</i> care locuiau în casă</br>
+            <font size="4">אֲנָשִׁים אֲשֶׁר יָשְׁבוּ בַּבַּיִת</font> bărbați <i>(mp nehotărât)</i> care locuiau în casă
+        </p>
+        <p>
+            Pronumele relativ  <font size="4">אֲשֶׁר</font>  urmează diferite părți de propoziție.</br>
+            <font size="4">נָפַל הָאִישׁ אֲשֶׁר שָׁלַח אֵת־הַנַּעַר</font> Omul care l-a trimis pe băiat a căzut <i>(subiect)</i></br>
+            <font size="4">שָׁלַח אֶת־הַנַּעַר אֲשֶׁר יָשַׁב בַּבַּיִת</font> L-a trimis pe băiatul care locuia în casă <i>(complement direct)</i></br>
+            <font size="4">שָׁלַח אֶת־הַנַּעַר לָאִישׁ אֲשֶׁר יָשַׁב בַּבַּיִת</font> L-a trimis pe băiat la omul care locuia în casă <i>(complement indirect)</i></br>
+        </p>
+        <p>
+            Un plural feminin într-o propoziție relativă poate fi tradus ca un trecut perfect.</br>
+            <font size="4">נָפַל הָאִישׁ אֲשֶׁר שָׁלַח אֶת־הַנַּעַר</font> Bărbatul <i>care îl trimisese</i> pe băiat a căzut.</br>
+            <font size="4">שָׁלַח אֶת־הַנַּעַר אֲשֶׁר יָשַׁב בַּבַּיִת</font> L-a trimis pe băiatul <i>care locuia</i> în casă."</i></br>
+        </p>
+        <h3>Directiva hei (<font size="4"> &#1492;&#8239;&#1464;&#9744;</font>)</h3>
+        <p>
+            Directiva hey (<font size="4"> &#1492;&#8239;&#1464;&#9744;</font>) este o terminație adăugată 
+            la anumite cuvinte, care exprimă <i>direcția spre</i>. Directiva hey nu este accentuată și se 
+            distinge astfel de <font size="4"> &#1492;&#8239;&#1464;&#9744;</font> = terminația feminină.</br>
+            <font size="4">אֶרֶץ</font> &#10232; <font size="4">אַרְצָה</font> spre țară</br>
+            <font size="4">הַבַּיִת</font> &#10232; <font size="4">הַבַּיְתָה</font> spre casă</br>
+            <font size="4">הַעִיר</font> &#10232; <font size="4">הַעִירָה</font> spre oraș</br>
+        </p>
+        <br>
+<div style="text-align: center;">
+
+    <a href="{% url 'home' %}" class="custom-link">Acasă</a>
+    </main>
+  </div>
+    <div class="right-sidebar"></div>
+  </div>
+</body>
+</html>

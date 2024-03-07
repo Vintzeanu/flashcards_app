@@ -40,6 +40,8 @@ urlpatterns = [
     path("construct_pl", include('construct_pl.urls')),
     path("qal_radacini_slabe", include('qal_radacini_slabe.urls')),
     path("sufix_posesiv_subst", include('sufix_posesiv_subst.urls')),
+    path("demonstrativ_relativ", include('demonstrativ_relativ.urls')),
+
 
 
 ]

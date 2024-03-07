@@ -51,3 +51,6 @@ def qal_radacini_slabe_view(request):
 
 def sufix_posesiv_subst_view(request):
     return render(request, 'sufix_posesiv_subst/sufix_posesiv_subst.html', {})
+
+def demonstrativ_relativ_view(request):
+    return render(request, 'demonstrativ_relativ/demonstrativ_relativ.html', {})
