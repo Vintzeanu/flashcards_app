@@ -54,3 +54,6 @@ def sufix_posesiv_subst_view(request):
 
 def demonstrativ_relativ_view(request):
     return render(request, 'demonstrativ_relativ/demonstrativ_relativ.html', {})
+
+def sufix_posesiv_pl_view(request):
+    return render(request, 'sufix_posesiv_pl/sufix_posesiv_pl.html', {})

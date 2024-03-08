@@ -41,7 +41,7 @@ urlpatterns = [
     path("qal_radacini_slabe", include('qal_radacini_slabe.urls')),
     path("sufix_posesiv_subst", include('sufix_posesiv_subst.urls')),
     path("demonstrativ_relativ", include('demonstrativ_relativ.urls')),
-
+    path("sufix_posesiv_pl", include('sufix_posesiv_pl.urls')),
 
 
 ]

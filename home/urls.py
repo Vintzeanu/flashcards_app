@@ -24,7 +24,7 @@ urlpatterns = [
     path("qal_radacini_slabe/", views.qal_radacini_slabe_view, name="qal_radacini_slabe"),
     path("sufix_posesiv_subst/", views.sufix_posesiv_subst_view, name="sufix_posesiv_subst"),
     path("demonstrativ_relativ/", views.demonstrativ_relativ_view, name="demonstrativ_relativ"),
-
+    path("sufix_posesiv_pl/", views.sufix_posesiv_pl_view, name="sufix_posesiv_pl"),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
