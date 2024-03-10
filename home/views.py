@@ -57,3 +57,6 @@ def demonstrativ_relativ_view(request):
 
 def sufix_posesiv_pl_view(request):
     return render(request, 'sufix_posesiv_pl/sufix_posesiv_pl.html', {})
+
+def qal_infinitiv_view(request):
+    return render(request, 'qal_infinitiv/qal_infinitiv.html', {})
