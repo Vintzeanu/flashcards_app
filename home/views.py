@@ -60,3 +60,6 @@ def sufix_posesiv_pl_view(request):
 
 def qal_infinitiv_view(request):
     return render(request, 'qal_infinitiv/qal_infinitiv.html', {})
+
+def qal_activ_view(request):
+    return render(request, 'qal_activ/qal_activ.html', {})

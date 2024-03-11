@@ -65,6 +65,7 @@ INSTALLED_APPS = [
     "demonstrativ_relativ",
     "sufix_posesiv_pl",
     "qal_infinitiv",
+    "qal_activ",
 ]
 
 MIDDLEWARE = [

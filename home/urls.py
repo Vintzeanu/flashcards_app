@@ -26,6 +26,7 @@ urlpatterns = [
     path("demonstrativ_relativ/", views.demonstrativ_relativ_view, name="demonstrativ_relativ"),
     path("sufix_posesiv_pl/", views.sufix_posesiv_pl_view, name="sufix_posesiv_pl"),
     path("qal_infinitiv/", views.qal_infinitiv_view, name="qal_infinitiv"),
+    path("qal_activ/", views.qal_activ_view, name="qal_activ"),
 
 ]
 
