@@ -44,7 +44,6 @@ urlpatterns = [
     path("sufix_posesiv_pl", include('sufix_posesiv_pl.urls')),
     path("qal_infinitiv", include('qal_infinitiv.urls')),
     path("qal_activ", include('qal_activ.urls')),
-
-
+    path("sufix_pronominal", include('sufix_pronominal.urls')),
 
 ]

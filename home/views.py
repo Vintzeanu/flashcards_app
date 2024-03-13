@@ -63,3 +63,6 @@ def qal_infinitiv_view(request):
 
 def qal_activ_view(request):
     return render(request, 'qal_activ/qal_activ.html', {})
+
+def sufix_pronominal_view(request):
+    return render(request, 'sufix_pronominal/sufix_pronominal.html', {})
