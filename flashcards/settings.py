@@ -67,6 +67,7 @@ INSTALLED_APPS = [
     "qal_infinitiv",
     "qal_activ",
     "sufix_pronominal",
+    "este_si_are",
 ]
 
 MIDDLEWARE = [

@@ -45,5 +45,7 @@ urlpatterns = [
     path("qal_infinitiv", include('qal_infinitiv.urls')),
     path("qal_activ", include('qal_activ.urls')),
     path("sufix_pronominal", include('sufix_pronominal.urls')),
+    path("este_si_are", include('este_si_are.urls')),
+
 
 ]

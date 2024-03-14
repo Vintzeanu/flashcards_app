@@ -66,3 +66,6 @@ def qal_activ_view(request):
 
 def sufix_pronominal_view(request):
     return render(request, 'sufix_pronominal/sufix_pronominal.html', {})
+
+def este_si_are_view(request):
+    return render(request, 'este_si_are/este_si_are.html', {})
