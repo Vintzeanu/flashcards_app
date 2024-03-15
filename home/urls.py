@@ -29,7 +29,7 @@ urlpatterns = [
     path("qal_activ/", views.qal_activ_view, name="qal_activ"),
     path("sufix_pronominal/", views.sufix_pronominal_view, name="sufix_pronominal"),
     path("este_si_are/", views.este_si_are_view, name="este_si_are"),
-
+    path("qal_volitiv/", views.qal_volitiv_view, name="qal_volitiv"),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
