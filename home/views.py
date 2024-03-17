@@ -72,3 +72,7 @@ def este_si_are_view(request):
 
 def qal_volitiv_view(request):
     return render(request, 'qal_volitiv/qal_volitiv.html', {})
+
+
+def qal_verbe_slabe_view(request):
+    return render(request, 'qal_verbe_slabe/qal_verbe_slabe.html', {})

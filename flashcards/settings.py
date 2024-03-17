@@ -69,6 +69,7 @@ INSTALLED_APPS = [
     "sufix_pronominal",
     "este_si_are",
     "qal_volitiv",
+    "qal_verbe_slabe",
 ]
 
 MIDDLEWARE = [

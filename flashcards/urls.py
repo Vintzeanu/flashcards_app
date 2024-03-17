@@ -47,5 +47,6 @@ urlpatterns = [
     path("sufix_pronominal", include('sufix_pronominal.urls')),
     path("este_si_are", include('este_si_are.urls')),
     path("qal_volitiv", include('qal_volitiv.urls')),
+    path("qal_verbe_slabe", include('qal_verbe_slabe.urls')),
 
 ]
