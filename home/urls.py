@@ -31,6 +31,7 @@ urlpatterns = [
     path("este_si_are/", views.este_si_are_view, name="este_si_are"),
     path("qal_volitiv/", views.qal_volitiv_view, name="qal_volitiv"),
     path("qal_verbe_slabe/", views.qal_verbe_slabe_view, name="qal_verbe_slabe"),
+    path("relativ_waw/", views.relativ_waw_view, name="relativ_waw"),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

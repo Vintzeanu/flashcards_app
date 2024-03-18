@@ -48,5 +48,6 @@ urlpatterns = [
     path("este_si_are", include('este_si_are.urls')),
     path("qal_volitiv", include('qal_volitiv.urls')),
     path("qal_verbe_slabe", include('qal_verbe_slabe.urls')),
+    path("relativ_waw", include('relativ_waw.urls')),
 
 ]

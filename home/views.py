@@ -76,3 +76,6 @@ def qal_volitiv_view(request):
 
 def qal_verbe_slabe_view(request):
     return render(request, 'qal_verbe_slabe/qal_verbe_slabe.html', {})
+
+def relativ_waw_view(request):
+    return render(request, 'relativ_waw/relativ_waw.html', {})

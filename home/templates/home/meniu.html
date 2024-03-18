@@ -1,15 +1,3 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ebraica biblică</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-
-</head>
-
-
 <body>
     <div class="navbar" id="nav">
         <a href="{% url 'home' %}" class="active">Acasă</a>
@@ -42,18 +30,28 @@
             </button>
             <div class="dropdown-menu">
               <a href="{% url 'verb' %}">Generalități despre forma verbului</a>
-              <a href="{% url 'qal_perfect' %}">Verbul la Qal Perfect</a>
               <a href="{% url 'propozitii' %}">Propoziții cu verb</a>
+              <a href="{% url 'qal_imperfect' %}">Verbul la Qal Imperfect</a>
+              <a href="{% url 'este_si_are' %}">(Nu) este, (nu) are</a>
+              <a href="{% url 'relativ_waw' %}">Waw relativ</a>
+            </div>
+          </div>
+          
+          <div class="dropdown">
+            <button class="btn">Verbul la Qal
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-menu">
+              <a href="{% url 'qal_perfect' %}">Verbul la Qal Perfect</a>
               <a href="{% url 'qal_imperfect' %}">Verbul la Qal Imperfect</a>
               <a href="{% url 'qal_radacini_slabe' %}">Qal perfect și imperfect: radăcini slabe</a>
               <a href="{% url 'qal_infinitiv' %}">Qal la infinitiv</a>
               <a href="{% url 'qal_activ' %}">Qal la participiul activ</a>
-              <a href="{% url 'este_si_are' %}">(Nu) este, (nu) are</a>
               <a href="{% url 'qal_volitiv' %}">Qal volitiv</a>
               <a href="{% url 'qal_verbe_slabe' %}">Qal la verbele slabe</a>
-
             </div>
           </div>  
+          
           <div class="dropdown">
             <button class="btn">Alte părți de propoziție 
               <i class="fa fa-caret-down"></i>
