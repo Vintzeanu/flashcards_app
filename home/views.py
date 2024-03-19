@@ -82,3 +82,6 @@ def relativ_waw_view(request):
 
 def temporal_interogativ_view(request):
     return render(request, 'temporal_interogativ/temporal_interogativ.html', {})
+
+def piel_radacini_tari_view(request):
+    return render(request, 'piel_radacini_tari/piel_radacini_tari.html', {})

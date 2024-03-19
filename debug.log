@@ -5972,3 +5972,14 @@ Traceback (most recent call last):
   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/django/urls/resolvers.py", line 802, in _reverse_with_prefix
     raise NoReverseMatch(msg)
 django.urls.exceptions.NoReverseMatch: Reverse for 'qal_infiniv' not found. 'qal_infiniv' is not a valid view function or pattern name.
+/Users/vintze/python/code/flashcards_app/flashcards/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/vintze/python/code/flashcards_app/flashcards/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/vintze/python/code/flashcards_app/home/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/vintze/python/code/flashcards_app/home/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/vintze/python/code/flashcards_app/home/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader

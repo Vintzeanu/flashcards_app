@@ -50,5 +50,6 @@ urlpatterns = [
     path("qal_verbe_slabe", include('qal_verbe_slabe.urls')),
     path("relativ_waw", include('relativ_waw.urls')),
     path("temporal_interogativ", include('temporal_interogativ.urls')),
+    path("piel_radacini_tari", include('piel_radacini_tari.urls')),
 
 ]

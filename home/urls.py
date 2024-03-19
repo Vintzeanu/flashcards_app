@@ -33,6 +33,7 @@ urlpatterns = [
     path("qal_verbe_slabe/", views.qal_verbe_slabe_view, name="qal_verbe_slabe"),
     path("relativ_waw/", views.relativ_waw_view, name="relativ_waw"),
     path("temporal_interogativ/", views.temporal_interogativ_view, name="temporal_interogativ"),
+    path("piel_radacini_tari/", views.piel_radacini_tari_view, name="piel_radacini_tari"),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
