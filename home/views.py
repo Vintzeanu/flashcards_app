@@ -79,3 +79,6 @@ def qal_verbe_slabe_view(request):
 
 def relativ_waw_view(request):
     return render(request, 'relativ_waw/relativ_waw.html', {})
+
+def temporal_interogativ_view(request):
+    return render(request, 'temporal_interogativ/temporal_interogativ.html', {})

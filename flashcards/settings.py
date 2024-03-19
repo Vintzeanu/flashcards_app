@@ -73,6 +73,7 @@ INSTALLED_APPS = [
     "qal_volitiv",
     "qal_verbe_slabe",
     "relativ_waw",
+    "temporal_interogativ"
 ]
 
 MIDDLEWARE = [
