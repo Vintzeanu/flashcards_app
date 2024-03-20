@@ -85,3 +85,6 @@ def temporal_interogativ_view(request):
 
 def piel_radacini_tari_view(request):
     return render(request, 'piel_radacini_tari/piel_radacini_tari.html', {})
+
+def piel_radacini_slabe_view(request):
+    return render(request, 'piel_radacini_slabe/piel_radacini_slabe.html', {})
