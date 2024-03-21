@@ -75,7 +75,8 @@ INSTALLED_APPS = [
     "relativ_waw",
     "temporal_interogativ",
     "piel_radacini_tari",
-    "piel_radacini_slabe"
+    "piel_radacini_slabe",
+    "surpriza",
 ]
 
 MIDDLEWARE = [

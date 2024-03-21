@@ -88,3 +88,6 @@ def piel_radacini_tari_view(request):
 
 def piel_radacini_slabe_view(request):
     return render(request, 'piel_radacini_slabe/piel_radacini_slabe.html', {})
+
+def surpriza_view(request):
+    return render(request, 'surpriza/surpriza.html', {})

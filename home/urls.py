@@ -35,6 +35,7 @@ urlpatterns = [
     path("temporal_interogativ/", views.temporal_interogativ_view, name="temporal_interogativ"),
     path("piel_radacini_tari/", views.piel_radacini_tari_view, name="piel_radacini_tari"),
     path("piel_radacini_slabe/", views.piel_radacini_slabe_view, name="piel_radacini_slabe"),
+    path("surpriza/", views.surpriza_view, name="surpriza"),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
