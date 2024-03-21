@@ -77,6 +77,7 @@ INSTALLED_APPS = [
     "piel_radacini_tari",
     "piel_radacini_slabe",
     "surpriza",
+    "numeralul",
 ]
 
 MIDDLEWARE = [

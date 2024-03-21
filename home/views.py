@@ -91,3 +91,6 @@ def piel_radacini_slabe_view(request):
 
 def surpriza_view(request):
     return render(request, 'surpriza/surpriza.html', {})
+
+def numeralul_view(request):
+    return render(request, 'numeralul/numeralul.html', {})

@@ -53,6 +53,7 @@ urlpatterns = [
     path("piel_radacini_tari", include('piel_radacini_tari.urls')),
     path("piel_radacini_slabe", include('piel_radacini_slabe.urls')),
     path("surpriza", include('surpriza.urls')),
+    path("numeralul", include('numeralul.urls')),
 
 
 ]
