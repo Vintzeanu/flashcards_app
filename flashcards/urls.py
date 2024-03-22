@@ -54,6 +54,7 @@ urlpatterns = [
     path("piel_radacini_slabe", include('piel_radacini_slabe.urls')),
     path("surpriza", include('surpriza.urls')),
     path("numeralul", include('numeralul.urls')),
+    path("hiphil_radacini_tari", include('hiphil_radacini_tari.urls')),
 
 
 ]

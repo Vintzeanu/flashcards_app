@@ -94,3 +94,6 @@ def surpriza_view(request):
 
 def numeralul_view(request):
     return render(request, 'numeralul/numeralul.html', {})
+
+def hiphil_radacini_tari_view(request):
+    return render(request, 'hiphil_radacini_tari/hiphil_radacini_tari.html', {})
