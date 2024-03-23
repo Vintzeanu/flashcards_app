@@ -38,6 +38,7 @@ urlpatterns = [
     path("surpriza/", views.surpriza_view, name="surpriza"),
     path("numeralul/", views.numeralul_view, name="numeralul"),
     path("hiphil_radacini_tari/", views.hiphil_radacini_tari_view, name="hiphil_radacini_tari"),
+    path("hiphil_gutural_nun/", views.hiphil_gutural_nun_view, name="hiphil_gutural_nun"),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

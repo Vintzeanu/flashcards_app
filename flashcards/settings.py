@@ -79,6 +79,7 @@ INSTALLED_APPS = [
     "surpriza",
     "numeralul",
     "hiphil_radacini_tari",
+    "hiphil_gutural_nun",
 ]
 
 MIDDLEWARE = [

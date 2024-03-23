@@ -97,3 +97,6 @@ def numeralul_view(request):
 
 def hiphil_radacini_tari_view(request):
     return render(request, 'hiphil_radacini_tari/hiphil_radacini_tari.html', {})
+
+def hiphil_gutural_nun_view(request):
+    return render(request, 'hiphil_gutural_nun/hiphil_gutural_nun.html', {})

@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebraica biblică</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" type="image/x-icon" href="/static/media/favicon.ico">
+
+</head>
+
+
+<body>
+    <div style="text-align: center;"> 
+        {% include "home/meniu.html" %}    
+    </div>
+    <div class="content">
+        {% include "hiphil_gutural_nun/hiphil_gutural_nun_new.html" %} 
+        </div>
+    </body>
+</html>

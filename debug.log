@@ -6071,3 +6071,32 @@ Watching for file changes with StatReloader
 Watching for file changes with StatReloader
 Watching for file changes with StatReloader
 Watching for file changes with StatReloader
+/Users/vintze/python/code/flashcards_app/flashcards/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/vintze/python/code/flashcards_app/flashcards/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/vintze/python/code/flashcards_app/home/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/vintze/python/code/flashcards_app/home/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /hiphil_gutural_nun/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vintze/python/code/flashcards_app/home/views.py", line 102, in hiphil_gutural_nun_view
+    return render(request, 'hiphil_gutural_nun/hiphil_gutural_nun.html', {})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: hiphil_gutural_nun/hiphil_gutural_nun.html
+Watching for file changes with StatReloader
