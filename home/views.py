@@ -100,3 +100,6 @@ def hiphil_radacini_tari_view(request):
 
 def hiphil_gutural_nun_view(request):
     return render(request, 'hiphil_gutural_nun/hiphil_gutural_nun.html', {})
+
+def hiphil_yod_view(request):
+    return render(request, 'hiphil_yod/hiphil_yod.html', {})

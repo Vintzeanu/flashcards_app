@@ -6100,3 +6100,14 @@ Traceback (most recent call last):
     raise TemplateDoesNotExist(template_name, chain=chain)
 django.template.exceptions.TemplateDoesNotExist: hiphil_gutural_nun/hiphil_gutural_nun.html
 Watching for file changes with StatReloader
+/Users/vintze/python/code/flashcards_app/flashcards/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/vintze/python/code/flashcards_app/flashcards/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/vintze/python/code/flashcards_app/home/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/vintze/python/code/flashcards_app/home/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/vintze/python/code/flashcards_app/home/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
