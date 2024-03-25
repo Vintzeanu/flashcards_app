@@ -103,3 +103,6 @@ def hiphil_gutural_nun_view(request):
 
 def hiphil_yod_view(request):
     return render(request, 'hiphil_yod/hiphil_yod.html', {})
+
+def hiphil_he_gaunoase_view(request):
+    return render(request, 'hiphil_he_gaunoase/hiphil_he_gaunoase.html', {})

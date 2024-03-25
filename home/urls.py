@@ -40,6 +40,7 @@ urlpatterns = [
     path("hiphil_radacini_tari/", views.hiphil_radacini_tari_view, name="hiphil_radacini_tari"),
     path("hiphil_gutural_nun/", views.hiphil_gutural_nun_view, name="hiphil_gutural_nun"),
     path("hiphil_yod/", views.hiphil_yod_view, name="hiphil_yod"),
+    path("hiphil_he_gaunoase/", views.hiphil_he_gaunoase_view, name="hiphil_he_gaunoase"),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
