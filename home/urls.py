@@ -41,6 +41,8 @@ urlpatterns = [
     path("hiphil_gutural_nun/", views.hiphil_gutural_nun_view, name="hiphil_gutural_nun"),
     path("hiphil_yod/", views.hiphil_yod_view, name="hiphil_yod"),
     path("hiphil_he_gaunoase/", views.hiphil_he_gaunoase_view, name="hiphil_he_gaunoase"),
+    path("pronume_mai_mult/", views.pronume_mai_mult_view, name="pronume_mai_mult"),
+
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

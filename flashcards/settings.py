@@ -82,6 +82,7 @@ INSTALLED_APPS = [
     "hiphil_gutural_nun",
     "hiphil_yod",
     "hiphil_he_gaunoase",
+    "pronume_mai_mult",
 ]
 
 MIDDLEWARE = [

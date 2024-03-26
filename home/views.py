@@ -106,3 +106,6 @@ def hiphil_yod_view(request):
 
 def hiphil_he_gaunoase_view(request):
     return render(request, 'hiphil_he_gaunoase/hiphil_he_gaunoase.html', {})
+
+def pronume_mai_mult_view(request):
+    return render(request, 'pronume_mai_mult/pronume_mai_mult.html', {})
