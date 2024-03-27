@@ -59,5 +59,6 @@ urlpatterns = [
     path("hiphil_yod", include('hiphil_yod.urls')),
     path("hiphil_he_gaunoase", include('hiphil_he_gaunoase.urls')),
     path("pronume_mai_mult", include('pronume_mai_mult.urls')),
+    path("niphal_radacini_tari", include('niphal_radacini_tari.urls')),
 
 ]

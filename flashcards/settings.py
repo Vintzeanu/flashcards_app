@@ -83,6 +83,7 @@ INSTALLED_APPS = [
     "hiphil_yod",
     "hiphil_he_gaunoase",
     "pronume_mai_mult",
+    "niphal_radacini_tari",
 ]
 
 MIDDLEWARE = [

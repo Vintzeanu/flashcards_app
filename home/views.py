@@ -109,3 +109,6 @@ def hiphil_he_gaunoase_view(request):
 
 def pronume_mai_mult_view(request):
     return render(request, 'pronume_mai_mult/pronume_mai_mult.html', {})
+
+def niphal_radacini_tari_view(request):
+    return render(request, 'niphal_radacini_tari/niphal_radacini_tari.html', {})

@@ -42,6 +42,8 @@ urlpatterns = [
     path("hiphil_yod/", views.hiphil_yod_view, name="hiphil_yod"),
     path("hiphil_he_gaunoase/", views.hiphil_he_gaunoase_view, name="hiphil_he_gaunoase"),
     path("pronume_mai_mult/", views.pronume_mai_mult_view, name="pronume_mai_mult"),
+    path("niphal_radacini_tari/", views.niphal_radacini_tari_view, name="niphal_radacini_tari"),
+
 
 ]
 
