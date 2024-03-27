@@ -112,3 +112,6 @@ def pronume_mai_mult_view(request):
 
 def niphal_radacini_tari_view(request):
     return render(request, 'niphal_radacini_tari/niphal_radacini_tari.html', {})
+
+def niphal_radacini_slabe_view(request):
+    return render(request, 'niphal_radacini_slabe/niphal_radacini_slabe.html', {})

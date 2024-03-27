@@ -43,6 +43,7 @@ urlpatterns = [
     path("hiphil_he_gaunoase/", views.hiphil_he_gaunoase_view, name="hiphil_he_gaunoase"),
     path("pronume_mai_mult/", views.pronume_mai_mult_view, name="pronume_mai_mult"),
     path("niphal_radacini_tari/", views.niphal_radacini_tari_view, name="niphal_radacini_tari"),
+    path("niphal_radacini_slabe/", views.niphal_radacini_slabe_view, name="niphal_radacini_slabe"),
 
 
 ]
