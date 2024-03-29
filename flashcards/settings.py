@@ -85,6 +85,7 @@ INSTALLED_APPS = [
     "pronume_mai_mult",
     "niphal_radacini_tari",
     "niphal_radacini_slabe",
+    "verbe_pasive",
 ]
 
 MIDDLEWARE = [

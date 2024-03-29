@@ -115,3 +115,6 @@ def niphal_radacini_tari_view(request):
 
 def niphal_radacini_slabe_view(request):
     return render(request, 'niphal_radacini_slabe/niphal_radacini_slabe.html', {})
+
+def verbe_pasive_view(request):
+    return render(request, 'verbe_pasive/verbe_pasive.html', {})

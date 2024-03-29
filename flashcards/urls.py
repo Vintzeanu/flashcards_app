@@ -61,5 +61,6 @@ urlpatterns = [
     path("pronume_mai_mult", include('pronume_mai_mult.urls')),
     path("niphal_radacini_tari", include('niphal_radacini_tari.urls')),
     path("niphal_radacini_slabe", include('niphal_radacini_slabe.urls')),
+    path("verbe_pasive", include('verbe_pasive.urls')),
 
 ]
