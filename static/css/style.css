@@ -1,3 +1,8 @@
+:root {
+  --blue: #ceecfe;
+  --white: #ffffff;
+}
+
 .navbar {
   max-width: 820px;
   margin: 0 auto; /* Centrarea containerului pe pagină */
@@ -70,7 +75,7 @@
 /* de aici este codul meu */
 
 body {
-  background-color: #c9e9ff; /* Schimbă această valoare la culoarea dorită */
+  background-color: var(--blue); /* Schimbă această valoare la culoarea dorită */
   margin: 0;
   padding: 0;
 }
@@ -161,16 +166,32 @@ input, select, textarea {
 
 table {
   border-collapse: collapse;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table.intreg {
+  border-collapse: collapse;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table.jumate {
+  border-collapse: collapse;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
     
 td, th {
-  border: 1px solid #addeff;
+  border: 1px solid var(--blue);
   text-align: center;
 }
     
 tr:nth-child(even) {
-  background-color: #c9e9ff;
+  background-color: var(--blue);
 }
 
 @media screen and (max-width: 600px) {
@@ -183,6 +204,16 @@ tr:nth-child(even) {
   }
 }
 @media screen and (max-width: 600px) {
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  table.jumate {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
   .navbar.responsive {position: relative;}
   .navbar.responsive .icon {
   position: absolute;
