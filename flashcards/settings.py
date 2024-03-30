@@ -86,6 +86,7 @@ INSTALLED_APPS = [
     "niphal_radacini_tari",
     "niphal_radacini_slabe",
     "verbe_pasive",
+    "hithpael",
 ]
 
 MIDDLEWARE = [
