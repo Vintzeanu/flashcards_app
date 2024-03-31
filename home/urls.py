@@ -46,6 +46,7 @@ urlpatterns = [
     path("niphal_radacini_slabe/", views.niphal_radacini_slabe_view, name="niphal_radacini_slabe"),
     path("verbe_pasive/", views.verbe_pasive_view, name="verbe_pasive"),
     path("hithpael/", views.hithpael_view, name="hithpael"),
+    path("geminate/", views.geminate_view, name="geminate"),
 
 
 ]

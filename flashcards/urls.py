@@ -63,4 +63,5 @@ urlpatterns = [
     path("niphal_radacini_slabe", include('niphal_radacini_slabe.urls')),
     path("verbe_pasive", include('verbe_pasive.urls')),
     path("hithpael", include('hithpael.urls')),
+    path("geminate", include('geminate.urls')),
 ]

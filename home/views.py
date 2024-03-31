@@ -121,3 +121,6 @@ def verbe_pasive_view(request):
 
 def hithpael_view(request):
     return render(request, 'hithpael/hithpael.html', {})
+
+def geminate_view(request):
+    return render(request, 'geminate/geminate.html', {})
