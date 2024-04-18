@@ -6200,3 +6200,4 @@ Traceback (most recent call last):
     raise TemplateDoesNotExist(template_name, chain=chain)
 django.template.exceptions.TemplateDoesNotExist: geminate/geminate.html
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
